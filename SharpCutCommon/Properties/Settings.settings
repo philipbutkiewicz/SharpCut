@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SharpCutCommon.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TimelineScrollSpeed" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="AutoSaveProject" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DarkMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GenerateFastPreview" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PreviewRate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24/60</Value>
+    </Setting>
+    <Setting Name="TimeUntilCourtesy" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1800</Value>
+    </Setting>
+    <Setting Name="CourtesyEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ProjectFileNameTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$(OriginalFn)-proj.$(Ext)</Value>
+    </Setting>
+    <Setting Name="SegmentFileNameTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$(OriginalFn)_$(SegStart)-$(SegEnd).$(Ext)</Value>
+    </Setting>
+    <Setting Name="MergedFileNameTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$(OriginalFn)_merged.$(Ext)</Value>
+    </Setting>
+    <Setting Name="IsBetaBuild" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

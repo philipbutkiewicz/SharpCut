@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>SharpCut</title>
+    <description>Most recent updates to SharpCut</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.0.1.0</title>
+      <sparkle:releaseNotesLink>
+        https://bagno.jp/software/SharpCut.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Tue, 26 Oct 2021 07:22:00 +0200</pubDate>
+      <enclosure url="https://bagno.jp/software/SharpCut-1.0.1.0_Setup.exe"
+                 sparkle:version="1.0.1.0"
+                 sparkle:installerArguments="/SILENT /SP- /NOICONS"
+                 length="0"
+                 type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>

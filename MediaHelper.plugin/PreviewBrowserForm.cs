@@ -180,6 +180,7 @@ namespace MediaHelper.plugin
 
             comboBoxFrameskip_SelectedIndexChanged(this, EventArgs.Empty);
             comboBoxSpeed_SelectedIndexChanged(this, EventArgs.Empty);
+            comboBoxRenderScale_SelectedIndexChanged(this, EventArgs.Empty);
 
 
             previewRenderer.LoadProject(project);
@@ -300,6 +301,7 @@ namespace MediaHelper.plugin
         {
             comboBoxSpeed.SelectedIndex = 2;
             comboBoxFrameskip.SelectedIndex = 0;
+            comboBoxRenderScale.SelectedIndex = 2;
 
             if (LoadFromList)
             {
@@ -491,6 +493,33 @@ namespace MediaHelper.plugin
                 }
             }
 
+        }
+
+        /// <summary>
+        /// Updates the preview renderer render scale on combo box value change.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void comboBoxRenderScale_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (previewRenderer != null)
+            {
+                switch (comboBoxRenderScale.SelectedIndex)
+                {
+                    case 0:
+                        previewRenderer.RenderScale = 1f;
+                        break;
+                    case 1:
+                        previewRenderer.RenderScale = 1.25f;
+                        break;
+                    case 2:
+                        previewRenderer.RenderScale = 1.5f;
+                        break;
+                    case 3:
+                        previewRenderer.RenderScale = 2f;
+                        break;
+                }
+            }
         }
 
         /// <summary>

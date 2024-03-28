@@ -38,6 +38,7 @@ namespace MediaHelper.plugin
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonPrev = new System.Windows.Forms.Button();
+            this.comboBoxRenderScale = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@ namespace MediaHelper.plugin
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Controls.Add(this.labelFile);
+            this.panel1.Controls.Add(this.comboBoxRenderScale);
             this.panel1.Controls.Add(this.buttonSave);
             this.panel1.Controls.Add(this.comboBoxFrameskip);
             this.panel1.Controls.Add(this.comboBoxSpeed);
@@ -122,6 +124,19 @@ namespace MediaHelper.plugin
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
             // 
+            // comboBoxRenderScale
+            // 
+            resources.ApplyResources(this.comboBoxRenderScale, "comboBoxRenderScale");
+            this.comboBoxRenderScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRenderScale.FormattingEnabled = true;
+            this.comboBoxRenderScale.Items.AddRange(new object[] {
+            resources.GetString("comboBoxRenderScale.Items"),
+            resources.GetString("comboBoxRenderScale.Items1"),
+            resources.GetString("comboBoxRenderScale.Items2"),
+            resources.GetString("comboBoxRenderScale.Items3")});
+            this.comboBoxRenderScale.Name = "comboBoxRenderScale";
+            this.comboBoxRenderScale.SelectedIndexChanged += new System.EventHandler(this.comboBoxRenderScale_SelectedIndexChanged);
+            // 
             // PreviewBrowserForm
             // 
             resources.ApplyResources(this, "$this");
@@ -150,5 +165,6 @@ namespace MediaHelper.plugin
         private System.Windows.Forms.Label labelFile;
         private System.Windows.Forms.ComboBox comboBoxFrameskip;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.ComboBox comboBoxRenderScale;
     }
 }

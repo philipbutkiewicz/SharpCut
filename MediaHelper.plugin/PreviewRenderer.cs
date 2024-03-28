@@ -44,6 +44,15 @@ namespace MediaHelper.plugin
             set { frameSkip = value;  }
         }
 
+        /// <summary>
+        /// Gets or sets render scale.
+        /// </summary>
+        public float RenderScale
+        {
+            get { return renderScale; }
+            set { renderScale = value; }
+        }
+
         #endregion
 
         #region Events
@@ -146,6 +155,11 @@ namespace MediaHelper.plugin
         /// Frame skip.
         /// </summary>
         private int frameSkip = 0;
+
+        /// <summary>
+        /// Render scale.
+        /// </summary>
+        private float renderScale = 1f;
 
         /// <summary>
         /// Preview loading progress.
@@ -337,8 +351,8 @@ namespace MediaHelper.plugin
                 GC.Collect();
             }
 
-            Console.WriteLine($"Window size is {(int)(bitmapWidth * 1.5f)}, {(int)(bitmapHeight * 1.5f)}");
-            SDL.SDL_SetWindowSize(sdlWindow, (int)(bitmapWidth * 1.5f), (int)(bitmapHeight * 1.5f));
+            Console.WriteLine($"Window size is {(int)(bitmapWidth * renderScale)}, {(int)(bitmapHeight * renderScale)}");
+            SDL.SDL_SetWindowSize(sdlWindow, (int)(bitmapWidth * renderScale), (int)(bitmapHeight * renderScale));
 
             finishedLoadingPreviewFrames = true;
 

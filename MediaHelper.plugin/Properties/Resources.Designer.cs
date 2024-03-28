@@ -181,5 +181,14 @@ namespace MediaHelper.plugin.Properties {
                 return ResourceManager.GetString("SDLInitFailed", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marked {0} items out of {1}.
+        /// </summary>
+        internal static string StatusBarInfoLabel {
+            get {
+                return ResourceManager.GetString("StatusBarInfoLabel", resourceCulture);
+            }
+        }
     }
 }

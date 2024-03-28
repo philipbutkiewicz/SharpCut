@@ -29,19 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewBrowserListForm));
+            this.panelList = new System.Windows.Forms.Panel();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelList
+            // 
+            resources.ApplyResources(this.panelList, "panelList");
+            this.panelList.Name = "panelList";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelInfo});
+            resources.ApplyResources(this.statusStrip, "statusStrip");
+            this.statusStrip.Name = "statusStrip";
+            // 
+            // toolStripStatusLabelInfo
+            // 
+            this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+            resources.ApplyResources(this.toolStripStatusLabelInfo, "toolStripStatusLabelInfo");
             // 
             // PreviewBrowserListForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.statusStrip);
+            this.Controls.Add(this.panelList);
             this.MaximizeBox = false;
             this.Name = "PreviewBrowserListForm";
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelList;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfo;
     }
 }

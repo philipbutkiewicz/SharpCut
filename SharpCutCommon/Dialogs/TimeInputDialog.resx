@@ -118,404 +118,121 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 20</value>
-  </data>
-  <data name="editToolStripMenuItem.Text" xml:space="preserve">
-    <value>Modifica</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Strumenti</value>
-  </data>
-  <data name="pluginsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
-  </data>
-  <data name="pluginsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Plugin</value>
-  </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Aiuto</value>
-  </data>
-  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 24</value>
-  </data>
-  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>Apri</value>
-  </data>
-  <data name="openNetworkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="openNetworkToolStripMenuItem.Text" xml:space="preserve">
-    <value>Apri rete</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chiudi</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 6</value>
-  </data>
-  <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="saveToolStripMenuItem.Text" xml:space="preserve">
-    <value>Salva...</value>
-  </data>
-  <data name="saveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="saveAsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Salva come...</value>
-  </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 6</value>
-  </data>
-  <data name="exportMediaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="exportMediaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Esporta file...</value>
-  </data>
-  <data name="exportTimestampsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="exportTimestampsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exposa punti taglio</value>
-  </data>
-  <data name="asCommaseparatedValuescsvToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 22</value>
-  </data>
-  <data name="asCommaseparatedValuescsvToolStripMenuItem.Text" xml:space="preserve">
-    <value>Come valori separati da virgole (.csv)...</value>
-  </data>
-  <data name="asYouTubeChapterstoClipboardToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 22</value>
-  </data>
-  <data name="asYouTubeChapterstoClipboardToolStripMenuItem.Text" xml:space="preserve">
-    <value>Come capitoli YouTube (negli appunti)...</value>
-  </data>
-  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 6</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Impostazioni...</value>
-  </data>
-  <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 6</value>
-  </data>
-  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Esci</value>
-  </data>
-  <data name="insertCutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="insertCutToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inserisci taglio</value>
-  </data>
-  <data name="removeCutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="removeCutToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rimuovi taglio</value>
-  </data>
-  <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 6</value>
-  </data>
-  <data name="setCutStartTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="setCutStartTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Imposta punto iniziale taglio</value>
-  </data>
-  <data name="setCutEndTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="setCutEndTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Imposta punto finale taglio</value>
-  </data>
-  <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 6</value>
-  </data>
-  <data name="previousCutStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="previousCutStartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Taglio precedente (inizio/fine)</value>
-  </data>
-  <data name="nextCutStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="nextCutStartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Prossimo taglio inizio/fine</value>
-  </data>
-  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 6</value>
-  </data>
-  <data name="goToVideoStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="goToVideoStartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vai all'inizio del video...</value>
-  </data>
-  <data name="goToVideoEndToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="goToVideoEndToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vai alla fine del video...</value>
-  </data>
-  <data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 6</value>
-  </data>
-  <data name="enterCutStartTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="enterCutStartTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Immettere l'ora di inizio del taglio...</value>
-  </data>
-  <data name="enterCutEndTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="enterCutEndTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Immettere l'ora di fine del taglio...</value>
-  </data>
-  <data name="toolStripMenuItem12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 6</value>
-  </data>
-  <data name="navigateToSpecificTimelinePositionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 22</value>
-  </data>
-  <data name="navigateToSpecificTimelinePositionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Passare alla posizione specifica della sequenza temporale...</value>
-  </data>
-  <data name="mergeFilesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="mergeFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Unisci file...</value>
-  </data>
-  <data name="remuxToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="remuxToToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remux in...</value>
-  </data>
-  <data name="toolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 6</value>
-  </data>
-  <data name="captureFrameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="captureFrameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cattura fotogramma...</value>
-  </data>
-  <data name="aboutSharpCutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 22</value>
-  </data>
-  <data name="aboutSharpCutToolStripMenuItem.Text" xml:space="preserve">
-    <value>Info su SharpCut...</value>
-  </data>
-  <data name="licensesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 22</value>
-  </data>
-  <data name="licensesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Licenze...</value>
-  </data>
-  <data name="toolStripMenuItem10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 6</value>
-  </data>
-  <data name="submitABugReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 22</value>
-  </data>
-  <data name="submitABugReportToolStripMenuItem.Text" xml:space="preserve">
-    <value>Invia una segnalazione di bug...</value>
-  </data>
-  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 6</value>
-  </data>
-  <data name="checkForUpdatesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 22</value>
-  </data>
-  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Controlla aggiornamenti...</value>
-  </data>
-  <data name="panelViewport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 611</value>
-  </data>
-  <data name="videoView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 611</value>
-  </data>
-  <data name="panelTimeline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 667</value>
-  </data>
-  <data name="panelTimeline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 62</value>
-  </data>
-  <data name="timeline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 62</value>
-  </data>
-  <data name="panelTools.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 635</value>
-  </data>
-  <data name="panelTools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 32</value>
-  </data>
-  <data name="panelTimeControls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 4</value>
-  </data>
-  <data name="panelTimeControls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>499, 24</value>
-  </data>
-  <data name="buttonCaptureFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0AAADdABEGw9BwAAAAd0SU1FB9ULChAHEjaUsrYAAAGmSURBVDhPpdLrK0NxHMdx/4s/wANipeWWNrVw
-        smh5oJHcctulFrkstliOuUQsptlsZy6tWXYhNPdLyfFYKeWR8kRNZPs4v8Om1VmYB+/69uv8Xr9fp1/G
-        iMlAcyHNaAIgFoulFdnLA9FoFD3GOeRJ6n8V+TYSiXwDRCugOqEcWEODfgPNw6vopl2o619FbS+DGp0T
-        cq2Dr1Jl55EkgNygRN4F9bgfZqcHtw8hPD1fwhF0o33UhxajF41DHj7l4IYwUFqtwuD8Lo5YD3ejVwAx
-        3D/uQW8JQjcVgnYiwKei/cKApEaNcfsR/MebeHm7w3v0CeytF2O2MEasYRgX9vmGLHvCgJQDLOsXWPSc
-        wncQwDHrhc13iLm1c8y6z9A3uogZ5hTTzhNhoEyhBhNgwQRvPuNmF5fTz2Jl6xoURcE4acey7yrFP5B3
-        YMm9k5TVvQ0rs40FV4gHSHqTRRggi+LydogrvuLmfFkbsorrkZmrSACiIio1UCTXoLBKA3FlN0SyDuRI
-        W5EtaU1sjpcS0NPLaNKaf0wQ+PdTJgt/iRwaBxxkSC8D/QGBTsfLcgNvygAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonCaptureFrame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1072, 4</value>
-  </data>
-  <data name="buttonCaptureFrame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 24</value>
-  </data>
-  <data name="buttonCaptureFrame.Text" xml:space="preserve">
-    <value>Cattura fotogramma</value>
-  </data>
-  <data name="buttonExport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAAd0SU1FB9ULCg03D54q2L8AAACMdEVYdENvbW1lbnQATWVudS1zaXplZCBpY29u
-        Cj09PT09PT09PT0KCihjKSAyMDAzIEpha3ViICdqaW1tYWMnIFN0ZWluZXIsIApodHRwOi8vamltbWFj
-        Lm11c2ljaGFsbC5jegoKY3JlYXRlZCB3aXRoIHRoZSBHSU1QLApodHRwOi8vd3d3LmdpbXAub3JnZ4rH
-        RwAAAiVJREFUOE+dkUtrE1EYhvM//COCFPGyKigILoqgiy68dGpMrKWt2DYuIsVKiwFDbcHpynTaaBRD
-        SmgkmgskGTK52ASLGQeTtNDmYm4QE5O8zjnWSaapLvzgmXP4zvs9zJnRjBonHlyYejpz8sb8HZknMtsy
-        GLj1+Meg3rA7NHnfqPlXndWZrg2bt2YevopdfSvshaPSd/i/5LHikXBzfrV9TjvXHpm9cuIw3l/M7Jz5
-        un4Mw7pxDN424sy9ZZyfZPHCvYOPOzlcemTDxZFpaHXMcRg0jF6L9J4IUuK3JIJJEdrnDpBrbPBpmDY/
-        4fL0ChLSLs38qVqtRiWau+MM2u02isUiCoUCpPRXTCy9oYIpSwiL7wQMMAuwurzyuZwhuWIB1Vr1t4A8
-        Wj9byOXzdKgXIhgyve/r5+VstdojaDab2N8/QCjio4Eldwp61q0wxn6AeeszPXvG2XAgZyuVSlfQaDSo
-        JJvNws+7FQkZJGwEJNozvbTSDLl/uVxWC8g3OCqx8hkqOsUsKsMkQ7IqQb1eRyaTUSQEYTuA06MLVLT8
-        2k57rVaLZki2VCp1BZ1O5/DnHF/klQm5XI7SJxAEAcFgUIXf71ftj5JMJtUC0mRZFjabDS6XCz6fD4FA
-        ANFoFBzHIR6PK6vT6UQoFOoKwuEwvF4v1tc52O12eDweRcDzPNYsa4jFYvJqoeumw6EWiKKIVCqlkEgk
-        KJFI5K/0Cgxk838whl9fSdp66U4UEAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonExport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1209, 4</value>
-  </data>
-  <data name="buttonExport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 24</value>
-  </data>
-  <data name="buttonExport.Text" xml:space="preserve">
-    <value>Esporta file</value>
-  </data>
-  <data name="buttonSetCutEndTime.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIbSURBVDhPnVPbS5NhHO7iw8oTWWpKkHcJQuDNCpwj
-        iLwQXYjimGZmggpjDmT6xQinMk+zlDyg5IXOtiZrq9kUXG7N6TbxENlBprKvi+76B6bmxR7f74NPt9wk
-        vHh4D8/v97zv8/5+7wUApyBsoXx5SqouGseD8GARk5Ros/fymikzmSfGijlTwB2YhtpUfkBEfpP17Wgx
-        Zwp4GDOcOzoYVjpDD56nBMlehKVjAXLCH37BQ0hT+0sBEwZcT2D90Y8Fvw61g4I9YTNlITxniY/lJraf
-        w5jbGsW8fxwL2xP4vDsFN2NAn1uKgeUqTG7QWAwY0G2tORS2xHGWIgRmvr+C3JyLpg93QdtEaLUXQOMq
-        Qs9SCV54yvDSI8GgrwZz/hG88XWECtXXWUsnApbNPlTo0iGdTEX1dAZktlugHQJolgvQu1KEXp8YPR4x
-        OheLudvMfBs6tssJ6NfVeDgeh5KJi5AYL6PyfQKqZ5PwdD4Z9Y50yJ1ZaHLmQPkpF0PkJvq1tugCpVOX
-        IDXF4/HHRNTaSbLrChrcKdwoc9zA66/10Nofhe6rkiMtsAIsjJttMG21w7LTASujgcx7FfLVa2j/IoBx
-        +xkUetFf0qX/PGKUMopU1L71lwaNq2kYY8qh9ytRqr0ZJOU9Xcbw5uDBEqzAW0aBfm9F6J4qPnYjhW+G
-        k+92WyE33DnIp8/ZyuKuzCBJPt9nIl7/8ztTOAKEJ2LWTpwldgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonSetCutEndTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 4</value>
-  </data>
-  <data name="buttonSetCutEndTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
-  </data>
-  <data name="buttonSetCutEndTime.Text" xml:space="preserve">
-    <value>Imposta punto finale taglio</value>
-  </data>
-  <data name="buttonSetCutStartTime.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIWSURBVDhPnZPfS1NhGMd3cQqqubIupMJuuolilxV5
-        hNFFYhgW0cDMsTptURJRuY0kHVu6HWiRGREU68eMxdSpRzsj3W+ydu66GM5Qm7S7/oGt7GLfnnNgo8km
-        1YEP53mf530/z3t436Nq6mEgQ4+qFlQ3sVbmU7XahgLKq1kLE+zwHCjUmlNTQDltk4XJOcc61j5+DdZs
-        UlVAY/OJvp35txJfjC/7kVqd+jsBvZUtc8OHC5FFH4T0IwwnTZjPjoO1MT9Kc8tYmO9lAaFlrZtz7knj
-        r9jSG7yQrHgQM8ATv4AP2QCSWT/iKyOILL3E7JfnEBeeKuvKglZ7Q+H1vKM4nX4MT9QAd1gPPnYOfOIs
-        +ORpuJKn4Iy3oC+sgy10DGLmSaVg8vMQvKke9Iut6A+dhON9GwaibXAmWtAbPYpb4YO4FtoH87u9MAuN
-        EDIPKwU+ya5s+eroIXD+/TAG9sAwXo8uQY2LoTpwsxpcIowUd02pEUg7KgXHezUF10xncSjB4fzILuj9
-        W9A5sU1ZYIpsx5XEDoXLFBvFOowurBMQyrl3e9k1r3QbN0Wt0p2b00BYHcBMblBBjieW72Fs0Vkp+PMY
-        z7ga889SN3Bfaqfu9Zj+Ngjd3U0bH6MsKEFjs+7O1jw/py++ylxXBOvnlKgqkKEc3Qv6JN+Rn8EV+78L
-        ZCivphsYbHfvzv+XoATVTc22ar8zVL8BzV9i/tvAgccAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="buttonSetCutStartTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 4</value>
-  </data>
-  <data name="buttonSetCutStartTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 24</value>
-  </data>
-  <data name="buttonSetCutStartTime.Text" xml:space="preserve">
-    <value>Imposta punto iniziale taglio</value>
-  </data>
-  <data name="buttonRemoveCut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0AAADdABEGw9BwAAAAd0SU1FB9YBCw87IgBcEsIAAAB0SURBVDhPYxgFgwmYpC45A8T/icRnoNoQACRx
-        4PKL/7svPv+/B4i3n3uGgredffZ/6xkgDcQgtVBtCAAS3HLm6f+p22//n7Lt9v9JW279n7D51v+2tTf/
-        N6+68b9+xfX/tcuu/5+/7wFOAyjzwigYMMDAAACe2X8rDxufhwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonRemoveCut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 4</value>
-  </data>
-  <data name="buttonRemoveCut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 24</value>
-  </data>
-  <data name="buttonRemoveCut.Text" xml:space="preserve">
-    <value>Rimuovi taglio</value>
-  </data>
-  <data name="buttonInsertCut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0AAADdABEGw9BwAAAAd0SU1FB9YBCxAAEZREeKEAAACnSURBVDhPYxi8wCR1yRkg/g/FZ6DCxAOQxu3n
-        noExiA0VJh7Q3wCgImQ/gzGyAWgYM0xAEgcuv/i/++Lz/3uAGKYZhredffZ/6xkgDcQgtVBtCAAS3HLm
-        6f+p22//n7Lt9v9JW279n7D51v+2tTf/N6+68b9+xfX/tcuu/5+/7wFOAzC8ANIMwujiQEw4WkEKQU6H
-        GQAVJh5QzQAQJtcAypIynQADAwBYHNdDrEEu9gAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="buttonInsertCut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 24</value>
-  </data>
-  <data name="buttonInsertCut.Text" xml:space="preserve">
-    <value>Inserisci taglio</value>
-  </data>
-  <data name="framePreview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 576</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 729</value>
+    <value>242, 87</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonSet.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxMilliseconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 22</value>
+  </data>
+  <data name="textBoxHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="&gt;&gt;textBoxHours.Name" xml:space="preserve">
+    <value>textBoxHours</value>
+  </data>
+  <data name="&gt;&gt;textBoxHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;textBoxMilliseconds.Name" xml:space="preserve">
+    <value>textBoxMilliseconds</value>
+  </data>
+  <data name="textBoxHours.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="&gt;&gt;textBoxSeconds.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxMilliseconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxMilliseconds.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 53</value>
+  </data>
+  <data name="buttonSet.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;textBoxSeconds.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Time input</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinutes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="&gt;&gt;label.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label.Name" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 25</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxMinutes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxHours.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonSet.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="&gt;&gt;buttonSet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;buttonSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSet.Name" xml:space="preserve">
+    <value>buttonSet</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinutes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 23</value>
+  </data>
+  <data name="&gt;&gt;label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxMinutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 25</value>
+  </data>
+  <data name="textBoxMilliseconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 25</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6951,7 +6668,58 @@
         i11OjuZ3DquVqzhc0nHOTkofh1uK4S4yLbgt8ij7pDX7/wFDWDwzcYwV7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1320, 768</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
+  <data name="buttonSet.Text" xml:space="preserve">
+    <value>Set time</value>
+  </data>
+  <data name="&gt;&gt;textBoxHours.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinutes.Name" xml:space="preserve">
+    <value>textBoxMinutes</value>
+  </data>
+  <data name="&gt;&gt;textBoxMilliseconds.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxMilliseconds.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TimeInputDialog</value>
+  </data>
+  <data name="&gt;&gt;textBoxSeconds.Name" xml:space="preserve">
+    <value>textBoxSeconds</value>
+  </data>
+  <data name="&gt;&gt;buttonSet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 23</value>
+  </data>
+  <data name="textBoxSeconds.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label.Text" xml:space="preserve">
+    <value>Time input label</value>
+  </data>
+  <data name="label.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="textBoxHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 25</value>
+  </data>
+  <data name="label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

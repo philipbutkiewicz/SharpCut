@@ -299,4 +299,13 @@ Szablony nazwy plików muszą zawierać co najmniej 1 znak, oraz dozwolone zmien
   <data name="SelectionLabelProjectNotOpen" xml:space="preserve">
     <value>Gotowy.</value>
   </data>
+  <data name="SetCutEndTimeInput" xml:space="preserve">
+    <value>Wprowadź czas końca (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetCutStartTimeInput" xml:space="preserve">
+    <value>Wprowadź czas początku (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetTimelineTimeInput" xml:space="preserve">
+    <value>Nawiguj do (HH:mm:ss:fff)</value>
+  </data>
 </root>

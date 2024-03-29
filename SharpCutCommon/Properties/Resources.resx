@@ -312,4 +312,13 @@ File name templates must contain at least 1 character and can contain the follow
   <data name="SelectionLabelProjectNotOpen" xml:space="preserve">
     <value>Ready.</value>
   </data>
+  <data name="SetCutEndTimeInput" xml:space="preserve">
+    <value>Enter cut end time (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetCutStartTimeInput" xml:space="preserve">
+    <value>Enter cut start time (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetTimelineTimeInput" xml:space="preserve">
+    <value>Navigate to (HH:mm:ss:fff)</value>
+  </data>
 </root>

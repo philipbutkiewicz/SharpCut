@@ -79,6 +79,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TextInputDialog";
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 

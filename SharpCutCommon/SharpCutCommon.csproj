@@ -104,6 +104,12 @@
     <Compile Include="Dialogs\TextInputDialog.Designer.cs">
       <DependentUpon>TextInputDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\TimeInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TimeInputDialog.Designer.cs">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\UpdateDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\TextInputDialog.resx">
       <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimeInputDialog.it-IT.resx">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimeInputDialog.pl-PL.resx">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimeInputDialog.resx">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\UpdateDialog.it-IT.resx">
       <DependentUpon>UpdateDialog.cs</DependentUpon>

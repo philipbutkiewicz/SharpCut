@@ -539,6 +539,58 @@ namespace SharpCut
         }
 
         /// <summary>
+        /// Sets cut start time from user input.
+        /// </summary>
+        private void SetCutStartTimeFromInput()
+        {
+            if (timeline.SelectedSection == null) return;
+
+            using (TimeInputDialog timeInputDialog = new TimeInputDialog())
+            {
+                timeInputDialog.LabelText = Resources.SetCutStartTimeInput;
+                timeInputDialog.Time = timeline.SelectedSection.Start;
+                timeInputDialog.MinTime = 0d;
+                timeInputDialog.MaxTime = timeline.SelectedSection.End - 1d;
+
+                if (timeInputDialog.ShowDialog() == DialogResult.OK)
+                {
+                    timeline.Time = timeInputDialog.Time;
+
+                    timeline_TimeChanged(this, new TimeChangedEventArgs(false));
+
+                    HidePreviewFrame();
+                    SetCutStartTime();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Sets cut end time from user input.
+        /// </summary>
+        private void SetCutEndTimeFromInput()
+        {
+            if (timeline.SelectedSection == null) return;
+
+            using (TimeInputDialog timeInputDialog = new TimeInputDialog())
+            {
+                timeInputDialog.LabelText = Resources.SetCutEndTimeInput;
+                timeInputDialog.Time = timeline.SelectedSection.End;
+                timeInputDialog.MinTime = timeline.SelectedSection.Start + 1d;
+                timeInputDialog.MaxTime = timeline.Duration;
+
+                if (timeInputDialog.ShowDialog() == DialogResult.OK)
+                {
+                    timeline.Time = timeInputDialog.Time;
+
+                    timeline_TimeChanged(this, new TimeChangedEventArgs(false));
+
+                    HidePreviewFrame();
+                    SetCutEndTime();
+                }
+            }
+        }
+
+        /// <summary>
         /// Navigates to previous segment start/end.
         /// </summary>
         private void NavigateToPreviousCutLocation()
@@ -628,6 +680,29 @@ namespace SharpCut
             timeline_TimeChanged(this, new TimeChangedEventArgs(false));
 
             HidePreviewFrame();
+        }
+
+        /// <summary>
+        /// Set timeline time from user input.
+        /// </summary>
+        private void SetTimelineTimeFromInput()
+        {
+            using (TimeInputDialog timeInputDialog = new TimeInputDialog())
+            {
+                timeInputDialog.LabelText = Resources.SetTimelineTimeInput;
+                timeInputDialog.Time = timeline.Time;
+                timeInputDialog.MinTime = 0d;
+                timeInputDialog.MaxTime = timeline.Duration;
+
+                if (timeInputDialog.ShowDialog() == DialogResult.OK)
+                {
+                    timeline.Time = timeInputDialog.Time;
+
+                    timeline_TimeChanged(this, new TimeChangedEventArgs(false));
+
+                    HidePreviewFrame();
+                }
+            }
         }
 
         /// <summary>
@@ -1181,6 +1256,36 @@ namespace SharpCut
         private void goToVideoEndToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NavigateToMediaEnd();
+        }
+
+        /// <summary>
+        /// Enter cut start time toolstip item event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void enterCutStartTimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetCutStartTimeFromInput();
+        }
+
+        /// <summary>
+        /// Enter cut end time toolstip item event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void enterCutEndTimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetCutEndTimeFromInput();
+        }
+
+        /// <summary>
+        /// Navigate to specific timeline position toolstip item event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void navigateToSpecificTimelinePositionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTimelineTimeFromInput();
         }
 
         /// <summary>

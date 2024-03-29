@@ -283,6 +283,30 @@
   <data name="goToVideoEndToolStripMenuItem.Text" xml:space="preserve">
     <value>Przejdź do końca filmu...</value>
   </data>
+  <data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 6</value>
+  </data>
+  <data name="enterCutStartTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 22</value>
+  </data>
+  <data name="enterCutStartTimeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ustaw początek cięcia...</value>
+  </data>
+  <data name="enterCutEndTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 22</value>
+  </data>
+  <data name="enterCutEndTimeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ustaw koniec cięcia...</value>
+  </data>
+  <data name="toolStripMenuItem12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 6</value>
+  </data>
+  <data name="navigateToSpecificTimelinePositionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 22</value>
+  </data>
+  <data name="navigateToSpecificTimelinePositionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nawiguj do pozycji czasu na osi...</value>
+  </data>
   <data name="mergeFilesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 22</value>
   </data>
@@ -334,6 +358,12 @@
   <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
     <value>Sprawdź aktualizacje...</value>
   </data>
+  <data name="panelTimeControls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 4</value>
+  </data>
+  <data name="panelTimeControls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 24</value>
+  </data>
   <data name="buttonCaptureFrame.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -355,9 +385,6 @@
   </data>
   <data name="buttonCaptureFrame.Text" xml:space="preserve">
     <value>Zapisz klatkę</value>
-  </data>
-  <data name="labelSection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 4</value>
   </data>
   <data name="buttonExport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6899,5 +6926,9 @@
         nyRfS1zrcSlhNB9wY7jPUt5IybxK6+LjLrlhIUZqrpTnWixabeLkazZxOiw+onBL4y3romGyjFsFc3xM
         i11OjuZ3DquVqzhc0nHOTkofh1uK4S4yLbgt8ij7pDX7/wFDWDwzcYwV7wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

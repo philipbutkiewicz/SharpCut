@@ -60,6 +60,11 @@ namespace SharpCut
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripSeparator();
             this.goToVideoStartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goToVideoEndToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripSeparator();
+            this.enterCutStartTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enterCutEndTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripSeparator();
+            this.navigateToSpecificTimelinePositionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mergeFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.remuxToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +84,9 @@ namespace SharpCut
             this.videoView = new LibVLCSharp.WinForms.VideoView();
             this.timerPause = new System.Windows.Forms.Timer(this.components);
             this.panelTimeline = new System.Windows.Forms.Panel();
+            this.timeline = new SharpCut.Controls.Timeline();
             this.panelTools = new System.Windows.Forms.Panel();
+            this.panelTimeControls = new System.Windows.Forms.Panel();
             this.buttonCaptureFrame = new System.Windows.Forms.Button();
             this.buttonExport = new System.Windows.Forms.Button();
             this.buttonSetCutEndTime = new System.Windows.Forms.Button();
@@ -88,9 +95,7 @@ namespace SharpCut
             this.buttonInsertCut = new System.Windows.Forms.Button();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.timerCourtesyUpdate = new System.Windows.Forms.Timer(this.components);
-            this.panelTimeControls = new System.Windows.Forms.Panel();
             this.framePreview = new SharpCut.Controls.FramePreview();
-            this.timeline = new SharpCut.Controls.Timeline();
             this.menuStrip.SuspendLayout();
             this.panelViewport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.videoView)).BeginInit();
@@ -229,7 +234,12 @@ namespace SharpCut
             this.nextCutStartToolStripMenuItem,
             this.toolStripMenuItem8,
             this.goToVideoStartToolStripMenuItem,
-            this.goToVideoEndToolStripMenuItem});
+            this.goToVideoEndToolStripMenuItem,
+            this.toolStripMenuItem11,
+            this.enterCutStartTimeToolStripMenuItem,
+            this.enterCutEndTimeToolStripMenuItem,
+            this.toolStripMenuItem12,
+            this.navigateToSpecificTimelinePositionToolStripMenuItem});
             resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             // 
@@ -295,6 +305,34 @@ namespace SharpCut
             this.goToVideoEndToolStripMenuItem.Name = "goToVideoEndToolStripMenuItem";
             resources.ApplyResources(this.goToVideoEndToolStripMenuItem, "goToVideoEndToolStripMenuItem");
             this.goToVideoEndToolStripMenuItem.Click += new System.EventHandler(this.goToVideoEndToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            resources.ApplyResources(this.toolStripMenuItem11, "toolStripMenuItem11");
+            // 
+            // enterCutStartTimeToolStripMenuItem
+            // 
+            this.enterCutStartTimeToolStripMenuItem.Name = "enterCutStartTimeToolStripMenuItem";
+            resources.ApplyResources(this.enterCutStartTimeToolStripMenuItem, "enterCutStartTimeToolStripMenuItem");
+            this.enterCutStartTimeToolStripMenuItem.Click += new System.EventHandler(this.enterCutStartTimeToolStripMenuItem_Click);
+            // 
+            // enterCutEndTimeToolStripMenuItem
+            // 
+            this.enterCutEndTimeToolStripMenuItem.Name = "enterCutEndTimeToolStripMenuItem";
+            resources.ApplyResources(this.enterCutEndTimeToolStripMenuItem, "enterCutEndTimeToolStripMenuItem");
+            this.enterCutEndTimeToolStripMenuItem.Click += new System.EventHandler(this.enterCutEndTimeToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            resources.ApplyResources(this.toolStripMenuItem12, "toolStripMenuItem12");
+            // 
+            // navigateToSpecificTimelinePositionToolStripMenuItem
+            // 
+            this.navigateToSpecificTimelinePositionToolStripMenuItem.Name = "navigateToSpecificTimelinePositionToolStripMenuItem";
+            resources.ApplyResources(this.navigateToSpecificTimelinePositionToolStripMenuItem, "navigateToSpecificTimelinePositionToolStripMenuItem");
+            this.navigateToSpecificTimelinePositionToolStripMenuItem.Click += new System.EventHandler(this.navigateToSpecificTimelinePositionToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -422,6 +460,27 @@ namespace SharpCut
             resources.ApplyResources(this.panelTimeline, "panelTimeline");
             this.panelTimeline.Name = "panelTimeline";
             // 
+            // timeline
+            // 
+            this.timeline.BackColor = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.timeline, "timeline");
+            this.timeline.Duration = 0D;
+            this.timeline.Name = "timeline";
+            this.timeline.PreviewGeneratingNewFrames = false;
+            this.timeline.PreviewLoaded = false;
+            this.timeline.PreviewProgress = 0F;
+            this.timeline.ScrollSpeed = 1F;
+            this.timeline.SelectedSection = null;
+            this.timeline.SelectionLabel = "";
+            this.timeline.Time = 0D;
+            this.timeline.TimeChanged += new System.EventHandler<SharpCut.Controls.Timeline.TimeChangedEventArgs>(this.timeline_TimeChanged);
+            this.timeline.SeekStart += new System.EventHandler(this.timeline_SeekStart);
+            this.timeline.SeekEnd += new System.EventHandler(this.timeline_SeekEnd);
+            this.timeline.SectionRenamed += new System.EventHandler(this.timeline_SectionRenamed);
+            this.timeline.ForceClosePreviewFrame += new System.EventHandler(this.timeline_ForceClosePreviewFrame);
+            this.timeline.SelectionChanged += new System.EventHandler(this.timeline_SelectionChanged);
+            this.timeline.KeyUp += new System.Windows.Forms.KeyEventHandler(this.timeline_KeyUp);
+            // 
             // panelTools
             // 
             this.panelTools.BackColor = System.Drawing.Color.PowderBlue;
@@ -434,6 +493,11 @@ namespace SharpCut
             this.panelTools.Controls.Add(this.buttonInsertCut);
             resources.ApplyResources(this.panelTools, "panelTools");
             this.panelTools.Name = "panelTools";
+            // 
+            // panelTimeControls
+            // 
+            resources.ApplyResources(this.panelTimeControls, "panelTimeControls");
+            this.panelTimeControls.Name = "panelTimeControls";
             // 
             // buttonCaptureFrame
             // 
@@ -488,38 +552,12 @@ namespace SharpCut
             this.timerCourtesyUpdate.Interval = 10000;
             this.timerCourtesyUpdate.Tick += new System.EventHandler(this.timerCourtesyUpdate_Tick);
             // 
-            // panelTimeControls
-            // 
-            resources.ApplyResources(this.panelTimeControls, "panelTimeControls");
-            this.panelTimeControls.Name = "panelTimeControls";
-            // 
             // framePreview
             // 
             this.framePreview.FrameHeight = 90;
             resources.ApplyResources(this.framePreview, "framePreview");
             this.framePreview.Name = "framePreview";
             this.framePreview.VideoFrame = null;
-            // 
-            // timeline
-            // 
-            this.timeline.BackColor = System.Drawing.Color.Gray;
-            resources.ApplyResources(this.timeline, "timeline");
-            this.timeline.Duration = 0D;
-            this.timeline.Name = "timeline";
-            this.timeline.PreviewGeneratingNewFrames = false;
-            this.timeline.PreviewLoaded = false;
-            this.timeline.PreviewProgress = 0F;
-            this.timeline.ScrollSpeed = 1F;
-            this.timeline.SelectedSection = null;
-            this.timeline.SelectionLabel = "";
-            this.timeline.Time = 0D;
-            this.timeline.TimeChanged += new System.EventHandler<Controls.Timeline.TimeChangedEventArgs>(this.timeline_TimeChanged);
-            this.timeline.SeekStart += new System.EventHandler(this.timeline_SeekStart);
-            this.timeline.SeekEnd += new System.EventHandler(this.timeline_SeekEnd);
-            this.timeline.SectionRenamed += new System.EventHandler(this.timeline_SectionRenamed);
-            this.timeline.ForceClosePreviewFrame += new System.EventHandler(this.timeline_ForceClosePreviewFrame);
-            this.timeline.SelectionChanged += new System.EventHandler(this.timeline_SelectionChanged);
-            this.timeline.KeyUp += new System.Windows.Forms.KeyEventHandler(this.timeline_KeyUp);
             // 
             // MainForm
             // 
@@ -609,6 +647,11 @@ namespace SharpCut
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem10;
         private System.Windows.Forms.ToolStripMenuItem submitABugReportToolStripMenuItem;
         private System.Windows.Forms.Panel panelTimeControls;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem enterCutStartTimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem enterCutEndTimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem navigateToSpecificTimelinePositionToolStripMenuItem;
     }
 }
 

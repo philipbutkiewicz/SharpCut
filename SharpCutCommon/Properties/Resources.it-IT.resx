@@ -320,4 +320,13 @@ I modelli nome file devono contenere almeno 1 carattere e possono contenere le s
   <data name="SelectionLabelProjectNotOpen" xml:space="preserve">
     <value>Pronta.</value>
   </data>
+  <data name="SetCutEndTimeInput" xml:space="preserve">
+    <value>Inserisci l'ora di fine taglio (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetCutStartTimeInput" xml:space="preserve">
+    <value>Inserisci l'ora di inizio taglio (HH:mm:ss:fff)</value>
+  </data>
+  <data name="SetTimelineTimeInput" xml:space="preserve">
+    <value>Vai a (HH:mm:ss:fff)</value>
+  </data>
 </root>

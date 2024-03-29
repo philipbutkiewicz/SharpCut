@@ -554,6 +554,33 @@ namespace SharpCutCommon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter cut end time (HH:mm:ss:fff).
+        /// </summary>
+        public static string SetCutEndTimeInput {
+            get {
+                return ResourceManager.GetString("SetCutEndTimeInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter cut start time (HH:mm:ss:fff).
+        /// </summary>
+        public static string SetCutStartTimeInput {
+            get {
+                return ResourceManager.GetString("SetCutStartTimeInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Navigate to (HH:mm:ss:fff).
+        /// </summary>
+        public static string SetTimelineTimeInput {
+            get {
+                return ResourceManager.GetString("SetTimelineTimeInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap SharpCutSmall {

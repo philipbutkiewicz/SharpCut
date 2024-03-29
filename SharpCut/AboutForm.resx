@@ -6852,6 +6852,9 @@
   <data name="linkLabelWebsite.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;buttonChangelog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;labelCopyright.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -6879,11 +6882,11 @@
   <data name="&gt;&gt;buttonChangelog.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;buttonChangelog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="labelCopyright.Text" xml:space="preserve">
-    <value>Copyright © 2021 - 2023 by Conflagrate</value>
+    <value>Copyright © 2021 - 2024 by Conflagrate</value>
   </data>
   <data name="linkLabelWebsite.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 13</value>
@@ -6920,9 +6923,6 @@
   </data>
   <data name="&gt;&gt;labelCopyright.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="labelVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>SharpCut</value>

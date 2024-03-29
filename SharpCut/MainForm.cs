@@ -1440,7 +1440,7 @@ namespace SharpCut
 
                 if (dialogResult == DialogResult.Yes)
                 {
-                    Process.Start("https://bagno.jp/");
+                    Process.Start("https://conflagrate.co");
                 }
                 else
                 {
@@ -1449,7 +1449,7 @@ namespace SharpCut
                         Resources.CourtesyTitle,
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
-                        );
+                    );
                 }
             }
             else

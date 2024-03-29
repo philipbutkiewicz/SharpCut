@@ -85,7 +85,7 @@ namespace SharpCutCommon.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1800")]
+        [global::System.Configuration.DefaultSettingValueAttribute("14440")]
         public int TimeUntilCourtesy {
             get {
                 return ((int)(this["TimeUntilCourtesy"]));

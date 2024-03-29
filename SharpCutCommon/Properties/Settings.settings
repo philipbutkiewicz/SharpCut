@@ -18,7 +18,7 @@
       <Value Profile="(Default)">24/60</Value>
     </Setting>
     <Setting Name="TimeUntilCourtesy" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1800</Value>
+      <Value Profile="(Default)">14440</Value>
     </Setting>
     <Setting Name="CourtesyEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

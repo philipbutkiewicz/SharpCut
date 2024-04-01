@@ -183,7 +183,7 @@ namespace MediaHelper.plugin.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marked {0} items out of {1}.
+        ///   Looks up a localized string similar to Marked {0} items out of {1} ({2}%).
         /// </summary>
         internal static string StatusBarInfoLabel {
             get {

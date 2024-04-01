@@ -155,6 +155,6 @@
     <value>Inicjalizacja SDL nie powiodła się.</value>
   </data>
   <data name="StatusBarInfoLabel" xml:space="preserve">
-    <value>Zaznaczono {0} z {1} plików</value>
+    <value>Zaznaczono {0} z {1} plików ({2}%)</value>
   </data>
 </root>

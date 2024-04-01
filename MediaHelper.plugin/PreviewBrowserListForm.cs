@@ -113,7 +113,7 @@ namespace MediaHelper.plugin
                 }
             }
 
-            toolStripStatusLabelInfo.Text = string.Format(Properties.Resources.StatusBarInfoLabel, fileNamesToDelete.Count, fileNames.Count);
+            toolStripStatusLabelInfo.Text = string.Format(Properties.Resources.StatusBarInfoLabel, fileNamesToDelete.Count, fileNames.Count, fileNamesToDelete.Count > 0 && fileNames.Count > 0 ? Math.Round((double)fileNamesToDelete.Count / fileNames.Count * 100, 2) : 0);
 
             Invalidate(true);
         }

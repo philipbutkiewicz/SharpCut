@@ -58,6 +58,10 @@ namespace SharpCutCommon.Video
                         return 3d / 60d;
                     case "6/60":
                         return 6d / 60d;
+                    case "8/60":
+                        return 8d / 60d;
+                    case "10/60":
+                        return 10d / 60d;
                     case "12/60":
                         return 12d / 60d;
                     case "24/60":

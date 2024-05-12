@@ -6,11 +6,10 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Threading;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace MediaHelper.plugin
 {
@@ -460,6 +459,8 @@ namespace MediaHelper.plugin
 
                             RenderBar(currentFrameIndex == 0 ? 0 : (float)currentFrameIndex / (float)project.PreviewFrames.Count, Color.CornflowerBlue);
                         }
+
+                        RenderTime();
                     }
 
                     if (previewLoadingProgress > 0f && previewLoadingProgress < 1f)
@@ -555,6 +556,19 @@ namespace MediaHelper.plugin
 
             if (textTexture != IntPtr.Zero)
                 SDL.SDL_DestroyTexture(textTexture);
+        }
+
+        /// <summary>
+        /// Render current timeline time.
+        /// </summary>
+        private void RenderTime()
+        {
+            double currentSeconds = currentFrameIndex > 0 ? (currentFrameIndex / (project.PreviewRate * 60d)) * 60 : 0;
+            double totalSeconds = sdlTextures.Count > 0 ? (sdlTextures.Count / (project.PreviewRate * 60d)) * 60 : 0;
+
+            string current = TimeSpan.FromSeconds(currentSeconds).ToString(@"hh\:mm\:ss\:fff");
+            string total = TimeSpan.FromSeconds(totalSeconds).ToString(@"hh\:mm\:ss\:fff");
+            RenderText(4, 24, $"{current}/{total}");
         }
 
         #endregion

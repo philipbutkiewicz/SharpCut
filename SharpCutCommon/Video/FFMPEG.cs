@@ -149,8 +149,6 @@ namespace SharpCutCommon.Video
                 .SetInputTime(TimeSpan.FromSeconds(section.End - section.Start))
                 .SetSeek(TimeSpan.FromSeconds(section.Start))
                 .AddParameter("-c copy")
-                .AddParameter("-map 0:0")
-                .AddParameter("-map 0:1")
                 .SetOutput(outputFileName);
 
             StartAndAwaitConversion(conversion, outputFileName);

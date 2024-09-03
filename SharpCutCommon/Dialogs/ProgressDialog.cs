@@ -20,11 +20,6 @@ namespace SharpCutCommon
             InitializeComponent();
         }
 
-        public void ShowError(string error)
-        {
-
-        }
-
         public void SetProgress(int progress, TimeSpan currentTime, TimeSpan totalTime)
         {
             Invoke((MethodInvoker)delegate

@@ -60,11 +60,11 @@
     <ApplicationIcon>SharpCut.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibVLCSharp, Version=3.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibVLCSharp.3.8.2\lib\net471\LibVLCSharp.dll</HintPath>
+    <Reference Include="LibVLCSharp, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.3.9.0\lib\net471\LibVLCSharp.dll</HintPath>
     </Reference>
-    <Reference Include="LibVLCSharp.WinForms, Version=3.8.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LibVLCSharp.WinForms.3.8.2\lib\net40\LibVLCSharp.WinForms.dll</HintPath>
+    <Reference Include="LibVLCSharp.WinForms, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.WinForms.3.9.0\lib\net40\LibVLCSharp.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>

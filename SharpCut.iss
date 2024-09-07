@@ -3,7 +3,7 @@
 
 #define MyAppName                "SharpCut"
 ;------------------------------------------------------- Check file path and exe file name
-#define MyAppVersion             GetVersionNumbersString('SharpCut\SharpCut\bin\x64\Release\SharpCut.exe')
+#define MyAppVersion             GetVersionNumbersString('SharpCut\bin\x64\Release\SharpCut.exe')
 #define MyAppPublisher           "Conflagrate"
 #define MyAppURL                 "https://conflagrate.co/sharpcut.html"
 #define MyAppExeName             "SharpCut.exe"

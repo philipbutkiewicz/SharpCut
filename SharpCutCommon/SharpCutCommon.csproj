@@ -190,7 +190,7 @@
     <EmbeddedResource Include="Dialogs\OpenNetworkDialog.resx">
       <DependentUpon>OpenNetworkDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\ProgressDialog.ja.resx">
+    <EmbeddedResource Include="Dialogs\ProgressDialog.ja-JP.resx">
       <DependentUpon>ProgressDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\ProgressDialog.zh-Hans.resx">

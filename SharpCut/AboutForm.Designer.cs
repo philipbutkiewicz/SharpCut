@@ -30,21 +30,16 @@ namespace SharpCut
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelBuildDate = new System.Windows.Forms.Label();
             this.linkLabelWebsite = new System.Windows.Forms.LinkLabel();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.buttonChangelog = new System.Windows.Forms.Button();
+            this.creditsControl = new SharpCut.Controls.CreditsControl();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox
-            // 
-            resources.ApplyResources(this.pictureBox, "pictureBox");
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.TabStop = false;
             // 
             // labelTitle
             // 
@@ -80,11 +75,26 @@ namespace SharpCut
             this.buttonChangelog.UseVisualStyleBackColor = true;
             this.buttonChangelog.Click += new System.EventHandler(this.buttonChangelog_Click);
             // 
+            // creditsControl
+            // 
+            resources.ApplyResources(this.creditsControl, "creditsControl");
+            this.creditsControl.BackColor = System.Drawing.Color.White;
+            this.creditsControl.Credits = ((System.Collections.Generic.List<string>)(resources.GetObject("creditsControl.Credits")));
+            this.creditsControl.LineSpacing = 14;
+            this.creditsControl.Name = "creditsControl";
+            // 
+            // pictureBox
+            // 
+            resources.ApplyResources(this.pictureBox, "pictureBox");
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.TabStop = false;
+            // 
             // AboutForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.creditsControl);
             this.Controls.Add(this.buttonChangelog);
             this.Controls.Add(this.labelCopyright);
             this.Controls.Add(this.linkLabelWebsite);
@@ -92,6 +102,7 @@ namespace SharpCut
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBox);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -113,5 +124,6 @@ namespace SharpCut
         private System.Windows.Forms.LinkLabel linkLabelWebsite;
         private System.Windows.Forms.Label labelCopyright;
         private System.Windows.Forms.Button buttonChangelog;
+        private Controls.CreditsControl creditsControl;
     }
 }

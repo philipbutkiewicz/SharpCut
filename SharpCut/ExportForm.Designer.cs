@@ -51,13 +51,13 @@ namespace SharpCut
             // 
             // comboBoxContainer
             // 
+            resources.ApplyResources(this.comboBoxContainer, "comboBoxContainer");
             this.comboBoxContainer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxContainer.FormattingEnabled = true;
             this.comboBoxContainer.Items.AddRange(new object[] {
             resources.GetString("comboBoxContainer.Items"),
             resources.GetString("comboBoxContainer.Items1"),
             resources.GetString("comboBoxContainer.Items2")});
-            resources.ApplyResources(this.comboBoxContainer, "comboBoxContainer");
             this.comboBoxContainer.Name = "comboBoxContainer";
             // 
             // labelContainer

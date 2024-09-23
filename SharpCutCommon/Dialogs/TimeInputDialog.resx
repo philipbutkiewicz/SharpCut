@@ -117,14 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>242, 87</value>
+  <data name="&gt;&gt;buttonSet.Name" xml:space="preserve">
+    <value>buttonSet</value>
+  </data>
+  <data name="&gt;&gt;textBoxHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonSet.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="textBoxMilliseconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 22</value>
   </data>
@@ -134,20 +137,14 @@
   <data name="&gt;&gt;textBoxHours.Name" xml:space="preserve">
     <value>textBoxHours</value>
   </data>
-  <data name="&gt;&gt;textBoxHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxHours.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 9</value>
   </data>
   <data name="&gt;&gt;textBoxMilliseconds.Name" xml:space="preserve">
     <value>textBoxMilliseconds</value>
-  </data>
-  <data name="textBoxHours.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="textBoxMinutes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
   </data>
   <data name="&gt;&gt;textBoxSeconds.Parent" xml:space="preserve">
     <value>$this</value>
@@ -173,14 +170,20 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Time input</value>
   </data>
-  <data name="&gt;&gt;textBoxMinutes.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;buttonSet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxMinutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 25</value>
   </data>
   <data name="textBoxSeconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
   <data name="&gt;&gt;label.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinutes.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label.Name" xml:space="preserve">
     <value>label</value>
@@ -193,6 +196,9 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>242, 87</value>
   </data>
   <data name="textBoxMinutes.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -216,8 +222,8 @@
   <data name="&gt;&gt;buttonSet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonSet.Name" xml:space="preserve">
-    <value>buttonSet</value>
+  <data name="textBoxMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
   <data name="&gt;&gt;textBoxMinutes.Parent" xml:space="preserve">
     <value>$this</value>
@@ -227,9 +233,6 @@
   </data>
   <data name="&gt;&gt;label.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="textBoxMinutes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 25</value>
   </data>
   <data name="textBoxMilliseconds.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 25</value>
@@ -6692,9 +6695,6 @@
   <data name="&gt;&gt;textBoxSeconds.Name" xml:space="preserve">
     <value>textBoxSeconds</value>
   </data>
-  <data name="&gt;&gt;buttonSet.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="&gt;&gt;label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -6721,5 +6721,8 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja-JP</value>
   </metadata>
 </root>

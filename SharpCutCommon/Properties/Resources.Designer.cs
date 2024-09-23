@@ -115,6 +115,41 @@ namespace SharpCutCommon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to **SharpCut**
+        ///A simple video cutting utility
+        ///
+        ///**Developed and maintained by**
+        ///Philip Butkiewicz (bagno)
+        ///&lt;https://github.com/philipbutkiewicz&gt;
+        ///
+        ///
+        ///** Translations **
+        ///This application was translated with
+        ///the help of several contributors.
+        ///
+        ///**Polish**
+        ///Philip Butkiewicz (bagno)
+        ///&lt;https://github.com/philipbutkiewicz&gt;
+        ///
+        ///**Japanese**
+        ///Philip Butkiewicz (bagno)
+        ///&lt;https://github.com/philipbutkiewicz&gt;
+        ///
+        ///**Italian**
+        ///bovirus
+        ///&lt;https://github.com/bovirus&gt;
+        ///
+        ///**Simplified Chinese**
+        ///wcxu21
+        ///&lt;https://github.co [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Credits {
+            get {
+                return ResourceManager.GetString("Credits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comma-Separated Values (*.csv)|*.csv.
         /// </summary>
         public static string CsvFilter {
@@ -651,6 +686,15 @@ namespace SharpCutCommon.Properties {
             get {
                 object obj = ResourceManager.GetObject("video-x-generic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://conflagrate.co/sharpcut.html.
+        /// </summary>
+        public static string WebsiteURL {
+            get {
+                return ResourceManager.GetString("WebsiteURL", resourceCulture);
             }
         }
     }

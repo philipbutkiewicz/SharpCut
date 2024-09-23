@@ -171,8 +171,6 @@ namespace SharpCutCommon.Video
             IConversion conversion = GetConversion()
                 .AddParameter($"-i \"{absoluteMediaFileName}\"")
                 .AddParameter("-c copy")
-                .AddParameter("-map 0:0")
-                .AddParameter("-map 0:1")
                 .SetOutput(outputFileName);
 
             StartAndAwaitConversion(conversion, outputFileName);

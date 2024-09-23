@@ -66,8 +66,8 @@ namespace SharpCutCommon
             // 
             // panelProgress
             // 
-            this.panelProgress.Controls.Add(this.labelProgress);
             resources.ApplyResources(this.panelProgress, "panelProgress");
+            this.panelProgress.Controls.Add(this.labelProgress);
             this.panelProgress.Name = "panelProgress";
             // 
             // labelProgress

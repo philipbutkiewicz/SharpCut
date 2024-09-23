@@ -146,14 +146,20 @@
   <data name="labelFastPreviewAccuracy.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 93</value>
   </data>
+  <data name="&gt;&gt;textBoxSegmentFileNameTemplate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;checkBoxGenerateFastPreview.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxProjectFileNameTemplate.Parent" xml:space="preserve">
-    <value>tabPageFileNames</value>
+  <data name="&gt;&gt;textBoxMergedFileNameTemplate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="labelFastPreviewAccuracy.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;trackBarTimelineScrollSpeed.Type" xml:space="preserve">
     <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -211,6 +217,9 @@ on load and generate a low resolution preview)</value>
   <data name="&gt;&gt;textBoxSegmentFileNameTemplate.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="labelProjectFileNameTemplate.Text" xml:space="preserve">
+    <value>Project file name template</value>
+  </data>
   <data name="textBoxProjectFileNameTemplate.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 30</value>
   </data>
@@ -258,6 +267,9 @@ on load and generate a low resolution preview)</value>
   </data>
   <data name="comboBoxFastPreviewRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 37</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SettingsForm</value>
@@ -310,9 +322,6 @@ on load and generate a low resolution preview)</value>
   <data name="textBoxSegmentFileNameTemplate.Size" type="System.Drawing.Size, System.Drawing">
     <value>380, 22</value>
   </data>
-  <data name="labelFastPreviewAccuracy.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -333,9 +342,6 @@ on load and generate a low resolution preview)</value>
   </data>
   <data name="labelSegmentFileNameTemplate.Text" xml:space="preserve">
     <value>Segment file name template</value>
-  </data>
-  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
-    <value>buttonCancel</value>
   </data>
   <data name="&gt;&gt;labelMergedFileNameTemplate.Name" xml:space="preserve">
     <value>labelMergedFileNameTemplate</value>
@@ -358,8 +364,8 @@ on load and generate a low resolution preview)</value>
   <data name="trackBarTimelineScrollSpeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 137</value>
   </data>
-  <data name="&gt;&gt;textBoxSegmentFileNameTemplate.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
   </data>
   <data name="checkBoxGenerateFastPreview.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -387,9 +393,6 @@ on load and generate a low resolution preview)</value>
   </data>
   <data name="&gt;&gt;trackBarTimelineScrollSpeed.Name" xml:space="preserve">
     <value>trackBarTimelineScrollSpeed</value>
-  </data>
-  <data name="&gt;&gt;buttonSaveSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -6900,9 +6903,6 @@ on load and generate a low resolution preview)</value>
         i11OjuZ3DquVqzhc0nHOTkofh1uK4S4yLbgt8ij7pDX7/wFDWDwzcYwV7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;textBoxMergedFileNameTemplate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;textBoxProjectFileNameTemplate.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -6923,6 +6923,9 @@ on load and generate a low resolution preview)</value>
   </data>
   <data name="&gt;&gt;tabPageGeneral.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxProjectFileNameTemplate.Parent" xml:space="preserve">
+    <value>tabPageFileNames</value>
   </data>
   <data name="buttonSaveSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -6988,9 +6991,6 @@ in source media location)</value>
   <data name="&gt;&gt;labelTimelineScrollSpeedValue.Parent" xml:space="preserve">
     <value>tabPageGeneral</value>
   </data>
-  <data name="labelTimelineScrollSpeedValue.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
@@ -7039,8 +7039,8 @@ in source media location)</value>
   <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
     <value>413, 214</value>
   </data>
-  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 37</value>
+  <data name="&gt;&gt;buttonSaveSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="comboBoxFastPreviewRate.Items3" xml:space="preserve">
     <value>20s</value>
@@ -7066,8 +7066,8 @@ in source media location)</value>
   <data name="checkBoxAutoSaveProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 11</value>
   </data>
-  <data name="labelProjectFileNameTemplate.Text" xml:space="preserve">
-    <value>Project file name template</value>
+  <data name="labelTimelineScrollSpeedValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;labelFastPreviewAccuracy.Name" xml:space="preserve">
     <value>labelFastPreviewAccuracy</value>
@@ -7092,5 +7092,8 @@ in source media location)</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja-JP</value>
   </metadata>
 </root>

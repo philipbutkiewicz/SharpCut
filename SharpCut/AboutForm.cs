@@ -1,15 +1,10 @@
 ﻿using SharpCutCommon.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SharpCut
@@ -23,18 +18,20 @@ namespace SharpCut
 
         private void AboutForm_Load(object sender, EventArgs e)
         {
-            labelVersion.Text = $"{SharpCutCommon.Properties.Resources.Version}{Assembly.GetExecutingAssembly().GetName().Version}";
-            labelBuildDate.Text = $"{SharpCutCommon.Properties.Resources.BuildDate}{(File.Exists("Resources\\BuildDate.txt") ? File.ReadAllText("Resources\\BuildDate.txt") : "Unknown")}";
+            labelVersion.Text = $"{Resources.Version}{Assembly.GetExecutingAssembly().GetName().Version}";
+            labelBuildDate.Text = $"{Resources.BuildDate}{(File.Exists("Resources\\BuildDate.txt") ? File.ReadAllText("Resources\\BuildDate.txt") : "???")}";
 
             if (Settings.Default.IsBetaBuild)
             {
                 labelVersion.Text += " (BETA)";
             }
+
+            creditsControl.Credits = Resources.Credits.Replace("\r\n", "\n").Split(new char[] { '\n' }).ToList();
         }
 
         private void linkLabelWebsite_Click(object sender, EventArgs e)
         {
-            Process.Start("https://conflagrate.co/sharpcut.html");
+            Process.Start(Resources.WebsiteURL);
         }
 
         private void buttonChangelog_Click(object sender, EventArgs e)

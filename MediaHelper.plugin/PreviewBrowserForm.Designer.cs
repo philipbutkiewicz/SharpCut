@@ -32,18 +32,19 @@ namespace MediaHelper.plugin
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewBrowserForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelFile = new System.Windows.Forms.Label();
+            this.comboBoxRenderScale = new System.Windows.Forms.ComboBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.comboBoxFrameskip = new System.Windows.Forms.ComboBox();
             this.comboBoxSpeed = new System.Windows.Forms.ComboBox();
             this.buttonNext = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonPrev = new System.Windows.Forms.Button();
-            this.comboBoxRenderScale = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Controls.Add(this.labelFile);
             this.panel1.Controls.Add(this.comboBoxRenderScale);
@@ -53,13 +54,25 @@ namespace MediaHelper.plugin
             this.panel1.Controls.Add(this.buttonNext);
             this.panel1.Controls.Add(this.buttonDelete);
             this.panel1.Controls.Add(this.buttonPrev);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // labelFile
             // 
             resources.ApplyResources(this.labelFile, "labelFile");
             this.labelFile.Name = "labelFile";
+            // 
+            // comboBoxRenderScale
+            // 
+            resources.ApplyResources(this.comboBoxRenderScale, "comboBoxRenderScale");
+            this.comboBoxRenderScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRenderScale.FormattingEnabled = true;
+            this.comboBoxRenderScale.Items.AddRange(new object[] {
+            resources.GetString("comboBoxRenderScale.Items"),
+            resources.GetString("comboBoxRenderScale.Items1"),
+            resources.GetString("comboBoxRenderScale.Items2"),
+            resources.GetString("comboBoxRenderScale.Items3")});
+            this.comboBoxRenderScale.Name = "comboBoxRenderScale";
+            this.comboBoxRenderScale.SelectedIndexChanged += new System.EventHandler(this.comboBoxRenderScale_SelectedIndexChanged);
             // 
             // buttonSave
             // 
@@ -123,19 +136,6 @@ namespace MediaHelper.plugin
             this.buttonPrev.TabStop = false;
             this.buttonPrev.UseVisualStyleBackColor = true;
             this.buttonPrev.Click += new System.EventHandler(this.buttonPrev_Click);
-            // 
-            // comboBoxRenderScale
-            // 
-            resources.ApplyResources(this.comboBoxRenderScale, "comboBoxRenderScale");
-            this.comboBoxRenderScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRenderScale.FormattingEnabled = true;
-            this.comboBoxRenderScale.Items.AddRange(new object[] {
-            resources.GetString("comboBoxRenderScale.Items"),
-            resources.GetString("comboBoxRenderScale.Items1"),
-            resources.GetString("comboBoxRenderScale.Items2"),
-            resources.GetString("comboBoxRenderScale.Items3")});
-            this.comboBoxRenderScale.Name = "comboBoxRenderScale";
-            this.comboBoxRenderScale.SelectedIndexChanged += new System.EventHandler(this.comboBoxRenderScale_SelectedIndexChanged);
             // 
             // PreviewBrowserForm
             // 

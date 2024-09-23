@@ -19,6 +19,22 @@ namespace SharpCutCommon.Drawing
 
         #endregion
 
+        #region Fonts
+
+        public static Font DefaultFont = new Font(new FontFamily("Segoe UI"), 10f);
+
+        public static Font DefaultBoldFont = new Font(new FontFamily("Segoe UI"), 10f, FontStyle.Bold);
+
+        #endregion
+
+        #region Brushes
+
+        public static Brush DefaultBrush = Brushes.White;
+
+        public static Brush DefaultBackdropBrush = new SolidBrush(Color.FromArgb(127, Color.Black));
+
+        #endregion
+
         #region Public methods
 
         /// <summary>
@@ -110,7 +126,7 @@ namespace SharpCutCommon.Drawing
         {
             if (font == null)
             {
-                font = new Font(FontFamily.GenericSansSerif, 10f);
+                font = DefaultFont;
             }
 
             return font;
@@ -120,7 +136,7 @@ namespace SharpCutCommon.Drawing
         {
             if (brush == null)
             {
-                brush = Brushes.White;
+                brush = DefaultBrush;
             }
 
             return brush;

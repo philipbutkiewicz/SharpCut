@@ -124,12 +124,17 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>674, 444</value>
   </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.25pt</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 0, 0</value>
+  <data name="listBoxDependencies.Items2" xml:space="preserve">
+    <value>libvlc</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LicensesForm</value>
   </data>
   <data name="listBoxDependencies.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 444</value>
@@ -137,13 +142,10 @@
   <data name="&gt;&gt;textBoxLicense.Name" xml:space="preserve">
     <value>textBoxLicense</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listBoxDependencies.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="listBoxDependencies.Items3" xml:space="preserve">
     <value>SDL2</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listBoxDependencies.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -156,8 +158,8 @@
   <data name="&gt;&gt;textBoxLicense.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 8.25pt</value>
+  <data name="&gt;&gt;textBoxLicense.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 3</value>
@@ -168,8 +170,8 @@
   <data name="listBoxDependencies.Items4" xml:space="preserve">
     <value>SDL2-CS</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>LicensesForm</value>
+  <data name="textBoxLicense.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 12pt</value>
   </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -177,15 +179,16 @@
   <data name="textBoxLicense.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
-  <data name="listBoxDependencies.Items2" xml:space="preserve">
-    <value>libvlc</value>
+  <data name="&gt;&gt;listBoxDependencies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="listBoxDependencies.Items1" xml:space="preserve">
     <value>Xabe.FFmpeg</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="textBoxLicense.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -201,8 +204,8 @@
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;listBoxDependencies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;listBoxDependencies.Name" xml:space="preserve">
+    <value>listBoxDependencies</value>
   </data>
   <data name="&gt;&gt;listBoxDependencies.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -6653,14 +6656,14 @@
   <data name="textBoxLicense.Size" type="System.Drawing.Size, System.Drawing">
     <value>671, 444</value>
   </data>
-  <data name="textBoxLicense.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 12pt</value>
-  </data>
   <data name="listBoxDependencies.Items" xml:space="preserve">
     <value>FFmpeg</value>
   </data>
   <data name="textBoxLicense.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBoxLicense.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -6668,14 +6671,11 @@
   <data name="&gt;&gt;listBoxDependencies.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBoxLicense.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;listBoxDependencies.Name" xml:space="preserve">
-    <value>listBoxDependencies</value>
+  <data name="listBoxDependencies.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -6685,5 +6685,8 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja-JP</value>
   </metadata>
 </root>

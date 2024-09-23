@@ -33,18 +33,19 @@ namespace SharpCutCommon
                 textBox.ScrollToCaret();
             });
         }
+
+        public void Abort()
+        {
+            Invoke((MethodInvoker)delegate
+            {
+                DialogResult = DialogResult.Abort;
+                Close();
+            });
+        }
+
         private void ProgressForm_Load(object sender, EventArgs e)
         {
             labelTitle.Text = ProgressTitle;
-        }
-
-        private void buttonAbort_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.Abort;
-            Invoke((MethodInvoker)delegate
-            {
-                Close();
-            });
         }
 
         private void buttonShowDetails_Click(object sender, EventArgs e)

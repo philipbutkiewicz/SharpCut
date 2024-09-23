@@ -407,7 +407,11 @@ namespace SharpCutCommon.Video
 
                 progressDialog = new ProgressDialog();
                 progressDialog.ProgressTitle = Resources.ExportingSections;
-                progressDialog.ShowDialog();
+                if (progressDialog.ShowDialog() == DialogResult.Abort)
+                {
+                    OnExportCompleted(new ExportCompletedEventArgs(exportedFileNames, false));
+                    return;
+                }
             }
 
             OnExportCompleted(new ExportCompletedEventArgs(exportedFileNames, true));
@@ -433,7 +437,6 @@ namespace SharpCutCommon.Video
 
             progressDialog = new ProgressDialog();
             progressDialog.ProgressTitle = Resources.MergingFiles;
-            progressDialog.ShowDialog();
         }
 
         /// <summary>
@@ -623,6 +626,9 @@ namespace SharpCutCommon.Video
             {
                 MessageBox.Show(Resources.ProjectExportError.Replace("%e", e.FailureReason), Resources.ProjectExportErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 OnExportCompleted(new ExportCompletedEventArgs(null, false));
+
+                progressDialog?.Abort();
+
                 return;
             }
 
@@ -643,6 +649,7 @@ namespace SharpCutCommon.Video
             {
                 MessageBox.Show(Resources.ProjectMergeError.Replace("%e", e.FailureReason), Resources.ProjectMergeErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 OnMergeCompleted(new MergeCompletedEventArgs(null, false));
+                progressDialog?.Abort();
                 return;
             }
 
@@ -662,6 +669,7 @@ namespace SharpCutCommon.Video
             {
                 MessageBox.Show(Resources.ProjectRemuxError.Replace("%e", e.FailureReason), Resources.ProjectRemuxErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 OnRemuxCompleted(new RemuxCompletedEventArgs(null, false));
+                progressDialog?.Abort();
                 return;
             }
 
@@ -682,6 +690,7 @@ namespace SharpCutCommon.Video
             if (!e.Success)
             {
                 OnLoadPreviewFramesCompleted(new LoadPreviewFramesCompletedEventArgs(false));
+                progressDialog?.Abort();
                 return;
             }
 

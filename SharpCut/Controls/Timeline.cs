@@ -348,6 +348,12 @@ namespace SharpCut.Controls
         /// </summary>
         private float upperTimelineItemSpacing = 72f;
 
+
+        /// <summary>
+        /// Time string font.
+        /// </summary>
+        private Font timeFont = new Font(FontFamily.GenericMonospace, 11f);
+
         /// <summary>
         /// Duration string font.
         /// </summary>
@@ -674,9 +680,9 @@ namespace SharpCut.Controls
             TextDrawingUtil.DrawStringWithBackdrop(g,
                 TimeSpan.FromSeconds(time).ToString(@"hh\:mm\:ss\:fff"),
                 new PointF(Bounds.Width / 2, (Bounds.Height / 2) + caretHeight - (selectionLabelHeight / 2) - 4),
-                new Font(FontFamily.GenericMonospace, 11f),
-                Brushes.White,
-                new SolidBrush(Color.FromArgb(127, Color.Black)),
+                timeFont,
+                null,
+                null,
                 TextDrawingUtil.Alignment.Center,
                 TextDrawingUtil.Alignment.Center
             );

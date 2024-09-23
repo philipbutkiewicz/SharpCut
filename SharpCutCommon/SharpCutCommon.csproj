@@ -128,6 +128,11 @@
       <DependentUpon>ProgressDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.ja-JP.Designer.cs">
+      <DependentUpon>Resources.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\Resources.it-IT.Designer.cs">
       <DependentUpon>Resources.it-IT.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -140,6 +145,11 @@
     </Compile>
     <Compile Include="Properties\Resources.pl-PL.Designer.cs">
       <DependentUpon>Resources.pl-PL.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.zh-Hans.Designer.cs">
+      <DependentUpon>Resources.zh-Hans.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -165,6 +175,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dialogs\OpenNetworkDialog.ja-JP.resx">
+      <DependentUpon>OpenNetworkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpenNetworkDialog.zh-Hans.resx">
+      <DependentUpon>OpenNetworkDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\OpenNetworkDialog.it-IT.resx">
       <DependentUpon>OpenNetworkDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\OpenNetworkDialog.resx">
       <DependentUpon>OpenNetworkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProgressDialog.ja.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProgressDialog.zh-Hans.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\ProgressDialog.it-IT.resx">
       <DependentUpon>ProgressDialog.cs</DependentUpon>
@@ -183,6 +205,12 @@
     <EmbeddedResource Include="Dialogs\ProgressDialog.resx">
       <DependentUpon>ProgressDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TextInputDialog.ja-JP.resx">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TextInputDialog.zh-Hans.resx">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\TextInputDialog.it-IT.resx">
       <DependentUpon>TextInputDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +219,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\TextInputDialog.resx">
       <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimeInputDialog.ja-JP.resx">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimeInputDialog.zh-Hans.resx">
+      <DependentUpon>TimeInputDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\TimeInputDialog.it-IT.resx">
       <DependentUpon>TimeInputDialog.cs</DependentUpon>
@@ -201,6 +235,12 @@
     <EmbeddedResource Include="Dialogs\TimeInputDialog.resx">
       <DependentUpon>TimeInputDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.ja-JP.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.zh-Hans.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\UpdateDialog.it-IT.resx">
       <DependentUpon>UpdateDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +249,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\UpdateDialog.resx">
       <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja-JP.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ja-JP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-Hans.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.it-IT.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -244,6 +294,8 @@ xcopy $(SolutionDir)SharpCutCommon\$(OutDir)ffprobe.exe $(SolutionDir)SharpCut\$
 
 echo Copying common translations...
 xcopy $(SolutionDir)SharpCutCommon\$(OutDir)pl-PL\* $(SolutionDir)SharpCut\$(OutDir)\pl-PL /Y /I /E
-xcopy $(SolutionDir)SharpCutCommon\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E</PostBuildEvent>
+xcopy $(SolutionDir)SharpCutCommon\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E
+xcopy $(SolutionDir)SharpCutCommon\$(OutDir)zh-Hans\* $(SolutionDir)SharpCut\$(OutDir)\zh-Hans /Y /I /E
+xcopy $(SolutionDir)SharpCutCommon\$(OutDir)ja-JP\* $(SolutionDir)SharpCut\$(OutDir)\ja-JP /Y /I /E</PostBuildEvent>
   </PropertyGroup>
 </Project>

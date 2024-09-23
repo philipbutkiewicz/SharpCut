@@ -42,15 +42,15 @@
             // 
             // statusStrip
             // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelInfo});
-            resources.ApplyResources(this.statusStrip, "statusStrip");
             this.statusStrip.Name = "statusStrip";
             // 
             // toolStripStatusLabelInfo
             // 
-            this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
             resources.ApplyResources(this.toolStripStatusLabelInfo, "toolStripStatusLabelInfo");
+            this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
             // 
             // PreviewBrowserListForm
             // 

@@ -329,4 +329,44 @@ I modelli nome file devono contenere almeno 1 carattere e possono contenere le s
   <data name="SetTimelineTimeInput" xml:space="preserve">
     <value>Vai a (HH:mm:ss:fff)</value>
   </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>https://conflagrate.co/sharpcut.html</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>**SharpCut**
+A simple video cutting utility
+
+**Developed and maintained by**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+
+** Translations **
+This application was translated with
+the help of several contributors.
+
+**Polish**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+**Japanese**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+**Italian**
+bovirus
+&lt;https://github.com/bovirus&gt;
+
+**Simplified Chinese**
+wcxu21
+&lt;https://github.com/wcxu21&gt;
+
+SharpCut is licensed under
+the GPL-3.0 license.
+
+Copyright © by Conflagrate and contributors.
+All rights reserved.
+
+Thank you for continuing to use SharpCut.</value>
+  </data>
 </root>

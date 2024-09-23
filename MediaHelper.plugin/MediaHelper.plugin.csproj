@@ -94,6 +94,16 @@
       <DependentUpon>PreviewBrowserListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="PreviewRenderer.cs" />
+    <Compile Include="Properties\Resources.ja-JP.Designer.cs">
+      <DependentUpon>Resources.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.zh-Hans.Designer.cs">
+      <DependentUpon>Resources.zh-Hans.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\Resources.it-IT.Designer.cs">
       <DependentUpon>Resources.it-IT.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -119,6 +129,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PluginForm.zh-Hans.resx">
+      <DependentUpon>PluginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PluginForm.it-IT.resx">
       <DependentUpon>PluginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +141,12 @@
     <EmbeddedResource Include="PluginForm.resx">
       <DependentUpon>PluginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PreviewBrowserForm.ja-JP.resx">
+      <DependentUpon>PreviewBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewBrowserForm.zh-Hans.resx">
+      <DependentUpon>PreviewBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PreviewBrowserForm.it-IT.resx">
       <DependentUpon>PreviewBrowserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +155,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreviewBrowserForm.resx">
       <DependentUpon>PreviewBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewBrowserListForm.ja-JP.resx">
+      <DependentUpon>PreviewBrowserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewBrowserListForm.zh-Hans.resx">
+      <DependentUpon>PreviewBrowserListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PreviewBrowserListForm.it-IT.resx">
       <DependentUpon>PreviewBrowserListForm.cs</DependentUpon>
@@ -148,6 +173,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreviewBrowserListItem.resx">
       <DependentUpon>PreviewBrowserListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ja-JP.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-Hans.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.it-IT.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -201,6 +234,8 @@ xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)SDL2-CS.dll $(SolutionDir)SharpC
 
 echo Copying the MediaHelper plugin translations...
 xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)pl-PL\* $(SolutionDir)SharpCut\$(OutDir)\pl-PL /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E</PostBuildEvent>
+xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E
+xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)zh-Hans\* $(SolutionDir)SharpCut\$(OutDir)\zh-Hans /Y /I /E
+xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)ja-JP\* $(SolutionDir)SharpCut\$(OutDir)\ja-JP /Y /I /E</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="video-x-generic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video-x-generic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document-save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list-remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SharpCutSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SharpCutSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BuildDate" xml:space="preserve">
+    <value>ビルド日：</value>
+  </data>
+  <data name="ErrorCannotRemuxToSource" xml:space="preserve">
+    <value>同じコンテナにリマックスすることはできません。</value>
+  </data>
+  <data name="ErrorCutSectionsRequiredBeforeExport" xml:space="preserve">
+    <value>メディアをエクスポートする前に、少なくとも1つのカットセクションを追加する必要があります。</value>
+  </data>
+  <data name="ErrorFormatNotSupported" xml:space="preserve">
+    <value>このファイル形式はSharpCutでサポートされていません。</value>
+  </data>
+  <data name="ErrorLoadingProject" xml:space="preserve">
+    <value>SharpCut/LosslessCutプロジェクトの開封に失敗しました。</value>
+  </data>
+  <data name="ErrorLoadingVideo" xml:space="preserve">
+    <value>ビデオファイルを読み込めませんでした。別のアプリケーションによってファイルがロックされている可能性がありますか？</value>
+  </data>
+  <data name="ErrorMediaPlayer" xml:space="preserve">
+    <value>ビデオの読み込み/再生エラーが発生しました。システム構成を確認してください。</value>
+  </data>
+  <data name="GenericErrorTitle" xml:space="preserve">
+    <value>何か問題が発生しました</value>
+  </data>
+  <data name="ProjectFormatFilter" xml:space="preserve">
+    <value>SharpCut/LosslessCut Project (.llc)|*.llc</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="SectionDuration" xml:space="preserve">
+    <value>持続時間：</value>
+  </data>
+  <data name="ExportingSections" xml:space="preserve">
+    <value>カットセグメントをエクスポート中・・・</value>
+  </data>
+  <data name="GeneratingPreviewFrames" xml:space="preserve">
+    <value>タイムラインプレビューを生成中・・・</value>
+  </data>
+  <data name="GenericPleaseWait" xml:space="preserve">
+    <value>お待ちください・・・</value>
+  </data>
+  <data name="MergingFiles" xml:space="preserve">
+    <value>ファイルをマージ中・・・</value>
+  </data>
+  <data name="ProgressPercent" xml:space="preserve">
+    <value>進捗状況：</value>
+  </data>
+  <data name="RemuxingFiles" xml:space="preserve">
+    <value>ファイルをリマックス中・・・</value>
+  </data>
+  <data name="DownloadFileError" xml:space="preserve">
+    <value>ファイルのダウンロード中に問題が発生しました。ネットワーク接続を確認してください。</value>
+  </data>
+  <data name="UpdateManifestURL" xml:space="preserve">
+    <value>https://conflagrate.co/software/sharpcut/manifest.json</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>ダウンロード中</value>
+  </data>
+  <data name="NewVersionAvailable" xml:space="preserve">
+    <value>新しいバージョンのSharpCutが利用可能です。最新バージョンをインストールすることを強くお勧めします。多くの改善と既知のバグ修正が含まれています。今すぐアップデートをインストールしますか？</value>
+  </data>
+  <data name="NoUpdatesAvailable" xml:space="preserve">
+    <value>利用可能なアップデートはありません。最新バージョンを実行中です。</value>
+  </data>
+  <data name="UpdateChangelogURL" xml:space="preserve">
+    <value>https://conflagrate.co/software/sharpcut/changelog.txt</value>
+  </data>
+  <data name="UpdateDownloadError" xml:space="preserve">
+    <value>An error has occurred while downloading the update.</value>
+  </data>
+  <data name="UpdateTitle" xml:space="preserve">
+    <value>更新する</value>
+  </data>
+  <data name="ChangelogError" xml:space="preserve">
+    <value>（エラー）</value>
+  </data>
+  <data name="Courtesy" xml:space="preserve">
+    <value>しばらくの間SharpCutをご利用いただきありがとうございます！著者のウェブサイトをご覧になりませんか？</value>
+  </data>
+  <data name="CourtesyDisabled" xml:space="preserve">
+    <value>わかりました！この件についてはもうお邪魔しません。SharpCutをお楽しみください！</value>
+  </data>
+  <data name="CourtesyTitle" xml:space="preserve">
+    <value>SharpCutをご利用いただきありがとうございます！</value>
+  </data>
+  <data name="MultipleFilesMerge" xml:space="preserve">
+    <value>複数のファイルをSharpCutに読み込もうとしました。これらをマージしますか？</value>
+  </data>
+  <data name="MultipleFilesMergeTitle" xml:space="preserve">
+    <value>複数のファイルが提供されました</value>
+  </data>
+  <data name="SecondIndicator" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="CaptureFrameFormatFilter" xml:space="preserve">
+    <value>PNG (*.png)|*.png</value>
+  </data>
+  <data name="RenameSectionFormTitle" xml:space="preserve">
+    <value>名前を変更</value>
+  </data>
+  <data name="RenameSectionLabel" xml:space="preserve">
+    <value>セクション名</value>
+  </data>
+  <data name="RenameSectionTitle" xml:space="preserve">
+    <value>セクションの名前を変更</value>
+  </data>
+  <data name="CsvFilter" xml:space="preserve">
+    <value>Comma-Separated Values (*.csv)|*.csv</value>
+  </data>
+  <data name="ExportToYoutubeTimestampsMessage" xml:space="preserve">
+    <value>YouTubeチャプターがクリップボードにエクスポートされました。内容を動画の説明欄に貼り付けてください。</value>
+  </data>
+  <data name="ExportToYoutubeTimestampsMessageTitle" xml:space="preserve">
+    <value>完了しました！</value>
+  </data>
+  <data name="FileNameTemplateInvalid" xml:space="preserve">
+    <value>無効なファイル名テンプレートが指定されました。
+ファイル名テンプレートは少なくとも1文字を含む必要があり、以下の変数を含むことができます：
+
+
+- $(OriginalFn)
+- $(SegStart)
+- $(SegEnd)
+- $(Timestamp)
+- $(Ext)</value>
+  </data>
+  <data name="FileNameTemplateInvalidTitle" xml:space="preserve">
+    <value>無効なファイル名テンプレートです。</value>
+  </data>
+  <data name="MergeComplete" xml:space="preserve">
+    <value>ファイルのマージが完了しました。生成されたファイルをSharpCutで開きますか？</value>
+  </data>
+  <data name="MergeCompleteTitle" xml:space="preserve">
+    <value>ファイルのマージが完了しました</value>
+  </data>
+  <data name="ProjectExportError" xml:space="preserve">
+    <value>ビデオセグメントのエクスポート中に問題が発生しました。このメッセージのスクリーンショットを撮影し、開発者に報告してください：
+%e</value>
+  </data>
+  <data name="ProjectExportErrorTitle" xml:space="preserve">
+    <value>ビデオセグメントのエクスポートに失敗しました。</value>
+  </data>
+  <data name="ProjectMergeError" xml:space="preserve">
+    <value>ビデオセグメントのマージ中に問題が発生しました。このメッセージのスクリーンショットを撮影し、開発者に報告してください：
+%e</value>
+  </data>
+  <data name="ProjectMergeErrorTitle" xml:space="preserve">
+    <value>ビデオセグメントのマージに失敗しました</value>
+  </data>
+  <data name="ProjectRemuxError" xml:space="preserve">
+    <value>ビデオのリマックス中に問題が発生しました。このメッセージのスクリーンショットを撮影し、開発者に報告してください：
+%e</value>
+  </data>
+  <data name="ProjectRemuxErrorTitle" xml:space="preserve">
+    <value>ビデオのリマックスに失敗しました</value>
+  </data>
+  <data name="UpdateBetaManifestURL" xml:space="preserve">
+    <value>https://conflagrate.co/software/sharpcut/manifest.beta.json</value>
+  </data>
+  <data name="SectionSelected" xml:space="preserve">
+    <value>選択された：</value>
+  </data>
+  <data name="SectionTotal" xml:space="preserve">
+    <value>合計：</value>
+  </data>
+  <data name="SelectionLabelNoSelection" xml:space="preserve">
+    <value>選択されていません。</value>
+  </data>
+  <data name="SelectionLabelProjectNotOpen" xml:space="preserve">
+    <value>準備完了。</value>
+  </data>
+  <data name="SetCutEndTimeInput" xml:space="preserve">
+    <value>カットの終了時間を入力してください（HH:mm:ss
+）</value>
+  </data>
+  <data name="SetCutStartTimeInput" xml:space="preserve">
+    <value>カットの開始時間を入力してください（HH:mm:ss
+）</value>
+  </data>
+  <data name="SetTimelineTimeInput" xml:space="preserve">
+    <value>（HH:mm:ss
+）に移動する</value>
+  </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>https://conflagrate.co/sharpcut.html</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>**SharpCut**
+A simple video cutting utility
+
+**Developed and maintained by**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+
+** Translations **
+This application was translated with
+the help of several contributors.
+
+**Polish**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+**Japanese**
+Philip Butkiewicz (bagno)
+&lt;https://github.com/philipbutkiewicz&gt;
+
+**Italian**
+bovirus
+&lt;https://github.com/bovirus&gt;
+
+**Simplified Chinese**
+wcxu21
+&lt;https://github.com/wcxu21&gt;
+
+SharpCut is licensed under
+the GPL-3.0 license.
+
+Copyright © by Conflagrate and contributors.
+All rights reserved.
+
+Thank you for continuing to use SharpCut.</value>
+  </data>
+</root>

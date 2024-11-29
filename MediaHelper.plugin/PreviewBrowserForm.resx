@@ -139,6 +139,9 @@
   <data name="&gt;&gt;comboBoxFrameskip.Name" xml:space="preserve">
     <value>comboBoxFrameskip</value>
   </data>
+  <data name="&gt;&gt;buttonPrev.Name" xml:space="preserve">
+    <value>buttonPrev</value>
+  </data>
   <data name="comboBoxRenderScale.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 21</value>
   </data>
@@ -163,9 +166,6 @@
   </data>
   <data name="comboBoxSpeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>698, 8</value>
-  </data>
-  <data name="comboBoxRenderScale.Items" xml:space="preserve">
-    <value>1x</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6601,9 +6601,6 @@
         i11OjuZ3DquVqzhc0nHOTkofh1uK4S4yLbgt8ij7pDX7/wFDWDwzcYwV7wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;comboBoxRenderScale.Name" xml:space="preserve">
-    <value>comboBoxRenderScale</value>
-  </data>
   <data name="comboBoxFrameskip.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 21</value>
   </data>
@@ -6632,11 +6629,11 @@
   <data name="comboBoxSpeed.Items3" xml:space="preserve">
     <value>120 fps</value>
   </data>
-  <data name="&gt;&gt;buttonPrev.Name" xml:space="preserve">
-    <value>buttonPrev</value>
+  <data name="comboBoxRenderScale.Items" xml:space="preserve">
+    <value>1x</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;buttonDelete.Name" xml:space="preserve">
+    <value>buttonDelete</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -6647,11 +6644,8 @@
   <data name="comboBoxFrameskip.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="buttonNext.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;labelFile.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;labelFile.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="comboBoxRenderScale.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -6670,9 +6664,6 @@
   </data>
   <data name="comboBoxSpeed.Items1" xml:space="preserve">
     <value>30 fps</value>
-  </data>
-  <data name="labelFile.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="labelFile.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -6707,8 +6698,14 @@
   <data name="&gt;&gt;comboBoxSpeed.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;labelFile.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="buttonDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 8</value>
+  </data>
+  <data name="buttonDelete.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;comboBoxRenderScale.Name" xml:space="preserve">
+    <value>comboBoxRenderScale</value>
   </data>
   <data name="labelFile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6740,6 +6737,9 @@
   <data name="buttonPrev.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="buttonNext.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <data name="buttonSave.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -6752,8 +6752,8 @@
   <data name="&gt;&gt;comboBoxRenderScale.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="buttonDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 8</value>
+  <data name="&gt;&gt;labelFile.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="buttonNext.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 8</value>
@@ -6773,8 +6773,8 @@
   <data name="&gt;&gt;buttonSave.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;buttonDelete.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="labelFile.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="buttonSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 25</value>
@@ -6797,8 +6797,8 @@
   <data name="comboBoxRenderScale.Items3" xml:space="preserve">
     <value>2x</value>
   </data>
-  <data name="comboBoxFrameskip.Items3" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;buttonPrev.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -6830,8 +6830,8 @@
   <data name="comboBoxRenderScale.Location" type="System.Drawing.Point, System.Drawing">
     <value>592, 8</value>
   </data>
-  <data name="&gt;&gt;buttonDelete.Name" xml:space="preserve">
-    <value>buttonDelete</value>
+  <data name="&gt;&gt;buttonDelete.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="comboBoxRenderScale.Items1" xml:space="preserve">
     <value>1.25x</value>
@@ -6839,8 +6839,8 @@
   <data name="comboBoxFrameskip.Location" type="System.Drawing.Point, System.Drawing">
     <value>645, 8</value>
   </data>
-  <data name="buttonDelete.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="comboBoxFrameskip.Items3" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>827, 41</value>

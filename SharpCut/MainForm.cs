@@ -115,7 +115,7 @@ namespace SharpCut
         {
             timeline.Clear();
 
-            if (!IsMediaFileSupported(fileName))
+            if (!FFMPEG.IsMediaSupported(fileName))
             {
                 MessageBox.Show(Resources.ErrorFormatNotSupported, Resources.GenericErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CloseFile(); return;
@@ -172,38 +172,6 @@ namespace SharpCut
             catch
             {
                 MessageBox.Show(Resources.ErrorLoadingVideo, Resources.GenericErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
-
-        /// <summary>
-        /// Checks whether media is supported.
-        /// </summary>
-        /// <param name="fileName"></param>
-        /// <returns></returns>
-        private bool IsMediaFileSupported(string fileName)
-        {
-            switch (Path.GetExtension(fileName).Replace(".", "").ToLower())
-            {
-                default:
-                    return false;
-                case "mp4":
-                case "mov":
-                case "avi":
-                case "mkv":
-                case "ts":
-                case "mts":
-                case "m2ts":
-                case "webm":
-                case "mpg":
-                case "mpeg":
-                case "ogv":
-                case "dts":
-                case "vob":
-                case "wmv":
-                case "rm":
-                case "flv":
-                case "dav":
-                    return true;
             }
         }
 
@@ -1026,7 +994,7 @@ namespace SharpCut
                 {
                     foreach (string file in files)
                     {
-                        if (!IsMediaFileSupported(file))
+                        if (!FFMPEG.IsMediaSupported(file))
                         {
                             MessageBox.Show(Resources.ErrorFormatNotSupported, Resources.GenericErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;

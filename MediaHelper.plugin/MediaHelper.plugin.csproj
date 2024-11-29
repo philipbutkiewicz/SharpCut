@@ -14,23 +14,6 @@
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x64\Debug\</OutputPath>
@@ -225,12 +208,12 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>echo Copying the MediaHelper plugin...
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)MediaHelper.plugin.dll $(SolutionDir)SharpCut\$(OutDir)MediaHelper.plugin.dll /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2.dll $(SolutionDir)SharpCut\$(OutDir)SDL2.dll /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2_ttf.dll $(SolutionDir)SharpCut\$(OutDir)SDL2_ttf.dll /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\libfreetype-6.dll $(SolutionDir)SharpCut\$(OutDir)libfreetype-6.dll /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\zlib1.dll $(SolutionDir)SharpCut\$(OutDir)zlib1.dll /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)SDL2-CS.dll $(SolutionDir)SharpCut\$(OutDir)SDL2-CS.dll /Y /I /E
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)MediaHelper.plugin.dll $(SolutionDir)SharpCut\$(OutDir)MediaHelper.plugin.dll /Y
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2.dll $(SolutionDir)SharpCut\$(OutDir)SDL2.dll /Y
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2_ttf.dll $(SolutionDir)SharpCut\$(OutDir)SDL2_ttf.dll /Y
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\libfreetype-6.dll $(SolutionDir)SharpCut\$(OutDir)libfreetype-6.dll /Y
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\zlib1.dll $(SolutionDir)SharpCut\$(OutDir)zlib1.dll /Y
+copy $(SolutionDir)MediaHelper.plugin\$(OutDir)SDL2-CS.dll $(SolutionDir)SharpCut\$(OutDir)SDL2-CS.dll /Y
 
 echo Copying the MediaHelper plugin translations...
 xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)pl-PL\* $(SolutionDir)SharpCut\$(OutDir)\pl-PL /Y /I /E

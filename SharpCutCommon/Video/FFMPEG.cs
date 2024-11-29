@@ -223,6 +223,42 @@ namespace SharpCutCommon.Video
         }
 
         /// <summary>
+        /// Merges multiple files into one.
+        /// </summary>
+        /// <param name="filesToMerge"></param>
+        /// <param name="outputFileName"></param>
+        /// <exception cref="Exception"></exception>
+        public void Merge(List<string> filesToMerge, string outputFileName)
+        {
+            if (filesToMerge.Count == 0)
+            {
+                throw new Exception("Need to provide at least 1 file.");
+            }
+
+            string extension = Path.GetExtension(filesToMerge[0]);
+            string mergeFileName = Path.Combine(Environment.GetEnvironmentVariable("tmp"), $"SharpCut_{StringUtil.RandomString(24)}");
+
+            MoveOldOutputFile(outputFileName);
+
+            string list = "";
+            foreach (string file in filesToMerge)
+            {
+                list += $"file '{file}'\n";
+            }
+
+            File.WriteAllText(mergeFileName, list);
+
+            IConversion conversion = GetConversion()
+                .AddParameter("-f concat")
+                .AddParameter("-safe 0")
+                .AddParameter($"-i \"{mergeFileName}\"")
+                .AddParameter("-c copy")
+                .SetOutput(outputFileName);
+
+            StartAndAwaitConversion(conversion, outputFileName);
+        }
+
+        /// <summary>
         /// Generate preview frames for media.
         /// </summary>
         /// <param name="mediaFileName"></param>
@@ -239,6 +275,38 @@ namespace SharpCutCommon.Video
                 .SetOutput(targetName);
 
             StartAndAwaitConversion(conversion);
+        }
+
+        /// <summary>
+        /// Checks the file extension for supported media types.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static bool IsMediaSupported(string fileName)
+        {
+            switch (Path.GetExtension(fileName).Replace(".", "").ToLower())
+            {
+                default:
+                    return false;
+                case "mp4":
+                case "mov":
+                case "avi":
+                case "mkv":
+                case "ts":
+                case "mts":
+                case "m2ts":
+                case "webm":
+                case "mpg":
+                case "mpeg":
+                case "ogv":
+                case "dts":
+                case "vob":
+                case "wmv":
+                case "rm":
+                case "flv":
+                case "dav":
+                    return true;
+            }
         }
 
         #endregion

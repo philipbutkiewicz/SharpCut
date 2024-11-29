@@ -37,8 +37,8 @@ namespace MediaHelper.plugin
             // 
             // groupBox
             // 
-            resources.ApplyResources(this.groupBox, "groupBox");
             this.groupBox.Controls.Add(this.buttonPreviewBrowser);
+            resources.ApplyResources(this.groupBox, "groupBox");
             this.groupBox.Name = "groupBox";
             this.groupBox.TabStop = false;
             // 

@@ -437,6 +437,7 @@ namespace SharpCutCommon.Video
 
             progressDialog = new ProgressDialog();
             progressDialog.ProgressTitle = Resources.MergingFiles;
+            progressDialog.ShowDialog();
         }
 
         /// <summary>

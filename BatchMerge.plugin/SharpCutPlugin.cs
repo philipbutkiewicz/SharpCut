@@ -1,10 +1,10 @@
 ﻿using SharpCutCommon.Plugins;
 using SharpCutCommon.Video;
+using System;
 using System.IO;
 using System.Reflection;
-using System;
 
-namespace MediaHelper.plugin
+namespace BatchMerge.plugin
 {
     public class SharpCutPlugin : ISharpCutPlugin
     {
@@ -23,7 +23,7 @@ namespace MediaHelper.plugin
         {
             return new SharpCutPluginInfo()
             {
-                Name = "Media Helper",
+                Name = "Batch Merge",
                 Author = "Conflagrate",
                 Version = "1.4.10.0"
             };
@@ -31,7 +31,7 @@ namespace MediaHelper.plugin
 
         public void InitPlugin(Project project)
         {
- 
+
         }
 
         public void DisposePlugin()

@@ -32,6 +32,7 @@ Global
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Debug|x64.ActiveCfg = Debug|x64
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Debug|x64.Build.0 = Debug|x64
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Release|x64.ActiveCfg = Release|x64
+		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

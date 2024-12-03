@@ -350,6 +350,12 @@ namespace SharpCut
         /// <param name="fileNamesToMerge"></param>
         private void MergeFiles(string originalFileName, List<string> fileNamesToMerge)
         {
+            if (Project.CurrentProject == null)
+            {
+                Project.CurrentProject = new Project();
+                InitProjectEvents();
+            }
+
             Project.CurrentProject.Merge(originalFileName, fileNamesToMerge);
         }
 

@@ -36,10 +36,10 @@
             this.buttonDown = new System.Windows.Forms.Button();
             this.buttonUp = new System.Windows.Forms.Button();
             this.panelOutputSettings = new System.Windows.Forms.Panel();
-            this.buttonBrowse = new System.Windows.Forms.Button();
-            this.labelOutputName = new System.Windows.Forms.Label();
             this.panelOutputFileName = new System.Windows.Forms.Panel();
             this.textBoxOutput = new System.Windows.Forms.TextBox();
+            this.buttonBrowse = new System.Windows.Forms.Button();
+            this.labelOutputName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelOutputSettings.SuspendLayout();
@@ -54,7 +54,7 @@
             this.Files.Location = new System.Drawing.Point(8, 8);
             this.Files.Name = "Files";
             this.Files.ScrollAlwaysVisible = true;
-            this.Files.Size = new System.Drawing.Size(357, 198);
+            this.Files.Size = new System.Drawing.Size(355, 193);
             this.Files.TabIndex = 2;
             this.Files.SelectedIndexChanged += new System.EventHandler(this.Files_SelectedIndexChanged);
             // 
@@ -66,7 +66,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(8, 8, 0, 8);
-            this.panel1.Size = new System.Drawing.Size(365, 214);
+            this.panel1.Size = new System.Drawing.Size(363, 209);
             this.panel1.TabIndex = 7;
             // 
             // panel2
@@ -76,10 +76,10 @@
             this.panel2.Controls.Add(this.buttonDown);
             this.panel2.Controls.Add(this.buttonUp);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(365, 52);
+            this.panel2.Location = new System.Drawing.Point(363, 52);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(3, 8, 8, 8);
-            this.panel2.Size = new System.Drawing.Size(111, 214);
+            this.panel2.Size = new System.Drawing.Size(111, 209);
             this.panel2.TabIndex = 8;
             // 
             // buttonDelete
@@ -137,8 +137,27 @@
             this.panelOutputSettings.Location = new System.Drawing.Point(0, 0);
             this.panelOutputSettings.Name = "panelOutputSettings";
             this.panelOutputSettings.Padding = new System.Windows.Forms.Padding(8);
-            this.panelOutputSettings.Size = new System.Drawing.Size(476, 52);
+            this.panelOutputSettings.Size = new System.Drawing.Size(474, 52);
             this.panelOutputSettings.TabIndex = 9;
+            // 
+            // panelOutputFileName
+            // 
+            this.panelOutputFileName.Controls.Add(this.textBoxOutput);
+            this.panelOutputFileName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelOutputFileName.Location = new System.Drawing.Point(8, 21);
+            this.panelOutputFileName.Name = "panelOutputFileName";
+            this.panelOutputFileName.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.panelOutputFileName.Size = new System.Drawing.Size(358, 23);
+            this.panelOutputFileName.TabIndex = 13;
+            // 
+            // textBoxOutput
+            // 
+            this.textBoxOutput.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxOutput.Location = new System.Drawing.Point(0, 0);
+            this.textBoxOutput.Name = "textBoxOutput";
+            this.textBoxOutput.Size = new System.Drawing.Size(355, 22);
+            this.textBoxOutput.TabIndex = 12;
+            this.textBoxOutput.TextChanged += new System.EventHandler(this.textBoxOutput_TextChanged);
             // 
             // buttonBrowse
             // 
@@ -146,7 +165,7 @@
             this.buttonBrowse.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonBrowse.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonBrowse.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBrowse.Location = new System.Drawing.Point(368, 21);
+            this.buttonBrowse.Location = new System.Drawing.Point(366, 21);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(100, 23);
             this.buttonBrowse.TabIndex = 12;
@@ -165,30 +184,11 @@
             this.labelOutputName.TabIndex = 10;
             this.labelOutputName.Text = "Output file name";
             // 
-            // panelOutputFileName
-            // 
-            this.panelOutputFileName.Controls.Add(this.textBoxOutput);
-            this.panelOutputFileName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelOutputFileName.Location = new System.Drawing.Point(8, 21);
-            this.panelOutputFileName.Name = "panelOutputFileName";
-            this.panelOutputFileName.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.panelOutputFileName.Size = new System.Drawing.Size(360, 23);
-            this.panelOutputFileName.TabIndex = 13;
-            // 
-            // textBoxOutput
-            // 
-            this.textBoxOutput.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxOutput.Location = new System.Drawing.Point(0, 0);
-            this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.Size = new System.Drawing.Size(357, 22);
-            this.textBoxOutput.TabIndex = 12;
-            this.textBoxOutput.TextChanged += new System.EventHandler(this.textBoxOutput_TextChanged);
-            // 
             // BatchMergeItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 266);
+            this.ClientSize = new System.Drawing.Size(474, 261);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelOutputSettings);
@@ -196,6 +196,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(490, 300);
             this.Name = "BatchMergeItemForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

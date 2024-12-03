@@ -6,7 +6,7 @@ namespace BatchMerge.plugin
     {
         public enum JobStatus
         {
-            Success, Error, Queued
+            Success, Error, Queued, Started
         }
 
         public string OutputName { get; set; }
@@ -19,7 +19,7 @@ namespace BatchMerge.plugin
         {
             get
             {
-                string displayName = $"({Status}) Merge {Items.Count} items: ";
+                string displayName = $"Merge {Items.Count} items: ";
                 foreach (BatchMergeFileItem item in Items)
                 {
                     displayName += $"{item.DisplayName} ,";

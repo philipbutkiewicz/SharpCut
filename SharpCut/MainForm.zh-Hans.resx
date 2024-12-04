@@ -331,7 +331,7 @@
 		<value>324, 22</value>
 	</data>
 	<data name="enterCutStartTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>输入分割始时间...</value>
+    <value>输入分割开始时间...</value>
   </data>
 	<data name="enterCutEndTimeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
 		<value>Alt+E</value>

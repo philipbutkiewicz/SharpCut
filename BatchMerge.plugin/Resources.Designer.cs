@@ -61,6 +61,24 @@ namespace BatchMerge.plugin {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Merge %s items: .
+        /// </summary>
+        internal static string BatchMergeJobItemDisplayName {
+            get {
+                return ResourceManager.GetString("BatchMergeJobItemDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text files (*.txt)|*.txt.
+        /// </summary>
+        internal static string DeleteListFilter {
+            get {
+                return ResourceManager.GetString("DeleteListFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ImageFailed {
@@ -97,6 +115,24 @@ namespace BatchMerge.plugin {
             get {
                 object obj = ResourceManager.GetObject("ImageSuccess", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All merge jobs have been completed..
+        /// </summary>
+        internal static string JobQueueCompleted {
+            get {
+                return ResourceManager.GetString("JobQueueCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jobs completed.
+        /// </summary>
+        internal static string JobQueueCompletedTitle {
+            get {
+                return ResourceManager.GetString("JobQueueCompletedTitle", resourceCulture);
             }
         }
     }

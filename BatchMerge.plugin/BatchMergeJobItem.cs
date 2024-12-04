@@ -19,7 +19,7 @@ namespace BatchMerge.plugin
         {
             get
             {
-                string displayName = $"Merge {Items.Count} items: ";
+                string displayName = string.Format(Resources.BatchMergeJobItemDisplayName, Items.Count.ToString());
                 foreach (BatchMergeFileItem item in Items)
                 {
                     displayName += $"{item.DisplayName} ,";

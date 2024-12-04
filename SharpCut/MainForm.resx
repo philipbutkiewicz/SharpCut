@@ -370,7 +370,7 @@
     <value>189, 22</value>
   </data>
   <data name="&gt;&gt;framePreview.Type" xml:space="preserve">
-    <value>SharpCut.Controls.FramePreview, SharpCut, Version=1.4.9.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>SharpCut.Controls.FramePreview, SharpCut, Version=1.4.11.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;setCutEndTimeToolStripMenuItem.Name" xml:space="preserve">
     <value>setCutEndTimeToolStripMenuItem</value>
@@ -474,8 +474,8 @@
   <data name="exportTimestampsToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;videoView.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="nextCutStartToolStripMenuItem.Text" xml:space="preserve">
+    <value>Next cut start/end</value>
   </data>
   <data name="openNetworkToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Shift+O</value>
@@ -652,7 +652,7 @@
     <value>Quit</value>
   </data>
   <data name="&gt;&gt;timeline.Type" xml:space="preserve">
-    <value>SharpCut.Controls.Timeline, SharpCut, Version=1.4.9.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>SharpCut.Controls.Timeline, SharpCut, Version=1.4.11.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem12.Name" xml:space="preserve">
     <value>toolStripMenuItem12</value>
@@ -828,9 +828,6 @@
   <data name="buttonRemoveCut.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="buttonCaptureFrame.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
   <data name="&gt;&gt;videoView.Name" xml:space="preserve">
     <value>videoView</value>
   </data>
@@ -890,9 +887,6 @@
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 6</value>
-  </data>
-  <data name="nextCutStartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Next cut start/end</value>
   </data>
   <data name="goToVideoEndToolStripMenuItem.Text" xml:space="preserve">
     <value>Go to video end...</value>
@@ -7550,6 +7544,9 @@
   <data name="&gt;&gt;panelViewport.Name" xml:space="preserve">
     <value>panelViewport</value>
   </data>
+  <data name="&gt;&gt;videoView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="buttonInsertCut.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -7581,7 +7578,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;videoView.Type" xml:space="preserve">
-    <value>LibVLCSharp.WinForms.VideoView, LibVLCSharp.WinForms, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LibVLCSharp.WinForms.VideoView, LibVLCSharp.WinForms, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7667,6 +7664,9 @@
   <data name="&gt;&gt;enterCutStartTimeToolStripMenuItem.Name" xml:space="preserve">
     <value>enterCutStartTimeToolStripMenuItem</value>
   </data>
+  <data name="&gt;&gt;exportTimestampsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -7721,8 +7721,8 @@
   <data name="&gt;&gt;buttonCaptureFrame.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exportTimestampsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonCaptureFrame.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
   </data>
   <data name="&gt;&gt;buttonSetCutStartTime.Parent" xml:space="preserve">
     <value>panelTools</value>
@@ -7755,7 +7755,7 @@
     <value>358, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja-JP</value>
+    <value>zh-Hans</value>
   </metadata>
   <metadata name="updateTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>237, 17</value>

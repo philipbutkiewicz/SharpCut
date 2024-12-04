@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,67 +59,522 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="checkBoxSaveDeleteList.AutoSize" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="checkBoxSaveDeleteList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+	<data name="checkBoxSaveDeleteList.Location" type="System.Drawing.Point, System.Drawing">
+		<value>6, 0</value>
+	</data>
+	<data name="checkBoxSaveDeleteList.Size" type="System.Drawing.Size, System.Drawing">
+		<value>460, 24</value>
+	</data>
+	<data name="checkBoxSaveDeleteList.TabIndex" type="System.Int32, mscorlib">
+		<value>2</value>
+	</data>
+	<data name="checkBoxSaveDeleteList.Text" xml:space="preserve">
+    <value>完成后保存源文件列表（以便手动删除）</value>
+  </data>
+	<data name="&gt;&gt;checkBoxSaveDeleteList.Name" xml:space="preserve">
+    <value>checkBoxSaveDeleteList</value>
+  </data>
+	<data name="&gt;&gt;checkBoxSaveDeleteList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;checkBoxSaveDeleteList.Parent" xml:space="preserve">
+    <value>panelCheckBox</value>
+  </data>
+	<data name="&gt;&gt;checkBoxSaveDeleteList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="panelCheckBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Left</value>
+	</data>
+	<data name="panelCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+		<value>157, 3</value>
+	</data>
+	<data name="panelCheckBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>6, 0, 0, 0</value>
+	</data>
+	<data name="panelCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+		<value>466, 24</value>
+	</data>
+	<data name="panelCheckBox.TabIndex" type="System.Int32, mscorlib">
+		<value>3</value>
+	</data>
+	<data name="&gt;&gt;panelCheckBox.Name" xml:space="preserve">
+    <value>panelCheckBox</value>
+  </data>
+	<data name="&gt;&gt;panelCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelCheckBox.Parent" xml:space="preserve">
+    <value>panelOptions</value>
+  </data>
+	<data name="&gt;&gt;panelCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="buttonSetDeleteList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Left</value>
+	</data>
+	<data name="buttonSetDeleteList.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+		<value>System</value>
+	</data>
+	<data name="buttonSetDeleteList.Location" type="System.Drawing.Point, System.Drawing">
+		<value>0, 3</value>
+	</data>
+	<data name="buttonSetDeleteList.Size" type="System.Drawing.Size, System.Drawing">
+		<value>157, 24</value>
+	</data>
+	<data name="buttonSetDeleteList.TabIndex" type="System.Int32, mscorlib">
+		<value>2</value>
+	</data>
+	<data name="buttonSetDeleteList.Text" xml:space="preserve">
+    <value>设置删除列表输出路径</value>
+  </data>
+	<data name="&gt;&gt;buttonSetDeleteList.Name" xml:space="preserve">
+    <value>buttonSetDeleteList</value>
+  </data>
+	<data name="&gt;&gt;buttonSetDeleteList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;buttonSetDeleteList.Parent" xml:space="preserve">
+    <value>panelOptions</value>
+  </data>
+	<data name="&gt;&gt;buttonSetDeleteList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="panelOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<data name="panelOptions.Location" type="System.Drawing.Point, System.Drawing">
+		<value>8, 0</value>
+	</data>
+	<data name="panelOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>0, 3, 3, 3</value>
+	</data>
+	<data name="panelOptions.Size" type="System.Drawing.Size, System.Drawing">
+		<value>960, 30</value>
+	</data>
+	<data name="panelOptions.TabIndex" type="System.Int32, mscorlib">
+		<value>5</value>
+	</data>
+	<data name="&gt;&gt;panelOptions.Name" xml:space="preserve">
+    <value>panelOptions</value>
+  </data>
+	<data name="&gt;&gt;panelOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelOptions.Parent" xml:space="preserve">
+    <value>panelControls</value>
+  </data>
+	<data name="&gt;&gt;panelOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="progressBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
+		<value>3, 3</value>
+	</data>
+	<data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+		<value>598, 22</value>
+	</data>
+	<data name="progressBar.TabIndex" type="System.Int32, mscorlib">
+		<value>6</value>
+	</data>
+	<data name="progressBar.Visible" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<data name="&gt;&gt;progressBar.Name" xml:space="preserve">
+    <value>progressBar</value>
+  </data>
+	<data name="&gt;&gt;progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
+    <value>panelProgress</value>
+  </data>
+	<data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="panelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<data name="panelProgress.Location" type="System.Drawing.Point, System.Drawing">
+		<value>170, 0</value>
+	</data>
+	<data name="panelProgress.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>3, 3, 3, 3</value>
+	</data>
+	<data name="panelProgress.Size" type="System.Drawing.Size, System.Drawing">
+		<value>604, 28</value>
+	</data>
+	<data name="panelProgress.TabIndex" type="System.Int32, mscorlib">
+		<value>5</value>
+	</data>
+	<data name="&gt;&gt;panelProgress.Name" xml:space="preserve">
+    <value>panelProgress</value>
+  </data>
+	<data name="&gt;&gt;panelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelProgress.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;panelProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="buttonMergeSelected.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Right</value>
+	</data>
+	<data name="buttonMergeSelected.Enabled" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<data name="buttonMergeSelected.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+		<value>System</value>
+	</data>
+	<data name="buttonMergeSelected.Location" type="System.Drawing.Point, System.Drawing">
+		<value>774, 0</value>
+	</data>
+	<data name="buttonMergeSelected.Size" type="System.Drawing.Size, System.Drawing">
+		<value>96, 28</value>
+	</data>
+	<data name="buttonMergeSelected.TabIndex" type="System.Int32, mscorlib">
+		<value>9</value>
+	</data>
+	<data name="buttonMergeSelected.Text" xml:space="preserve">
+    <value>合并所选</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeSelected.Name" xml:space="preserve">
+    <value>buttonMergeSelected</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeSelected.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeSelected.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="buttonMergeAll.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Right</value>
+	</data>
+	<data name="buttonMergeAll.Enabled" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<data name="buttonMergeAll.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+		<value>System</value>
+	</data>
+	<data name="buttonMergeAll.Location" type="System.Drawing.Point, System.Drawing">
+		<value>870, 0</value>
+	</data>
+	<data name="buttonMergeAll.Size" type="System.Drawing.Size, System.Drawing">
+		<value>90, 28</value>
+	</data>
+	<data name="buttonMergeAll.TabIndex" type="System.Int32, mscorlib">
+		<value>8</value>
+	</data>
+	<data name="buttonMergeAll.Text" xml:space="preserve">
+    <value>合并全部</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeAll.Name" xml:space="preserve">
+    <value>buttonMergeAll</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeAll.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;buttonMergeAll.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+	<data name="buttonRemoveJob.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Left</value>
+	</data>
+	<data name="buttonRemoveJob.Enabled" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<data name="buttonRemoveJob.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+		<value>System</value>
+	</data>
+	<data name="buttonRemoveJob.Location" type="System.Drawing.Point, System.Drawing">
+		<value>90, 0</value>
+	</data>
+	<data name="buttonRemoveJob.Size" type="System.Drawing.Size, System.Drawing">
+		<value>80, 28</value>
+	</data>
+	<data name="buttonRemoveJob.TabIndex" type="System.Int32, mscorlib">
+		<value>7</value>
+	</data>
+	<data name="buttonRemoveJob.Text" xml:space="preserve">
+    <value>移除合并</value>
+  </data>
+	<data name="&gt;&gt;buttonRemoveJob.Name" xml:space="preserve">
+    <value>buttonRemoveJob</value>
+  </data>
+	<data name="&gt;&gt;buttonRemoveJob.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;buttonRemoveJob.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;buttonRemoveJob.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+	<data name="buttonAddJob.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Left</value>
+	</data>
+	<data name="buttonAddJob.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+		<value>System</value>
+	</data>
+	<data name="buttonAddJob.Location" type="System.Drawing.Point, System.Drawing">
+		<value>0, 0</value>
+	</data>
+	<data name="buttonAddJob.Size" type="System.Drawing.Size, System.Drawing">
+		<value>90, 28</value>
+	</data>
+	<data name="buttonAddJob.TabIndex" type="System.Int32, mscorlib">
+		<value>6</value>
+	</data>
+	<data name="buttonAddJob.Text" xml:space="preserve">
+    <value>添加新的合并</value>
+  </data>
+	<data name="&gt;&gt;buttonAddJob.Name" xml:space="preserve">
+    <value>buttonAddJob</value>
+  </data>
+	<data name="&gt;&gt;buttonAddJob.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;buttonAddJob.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;buttonAddJob.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+	<data name="panelActions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Bottom</value>
+	</data>
+	<data name="panelActions.Location" type="System.Drawing.Point, System.Drawing">
+		<value>8, 30</value>
+	</data>
+	<data name="panelActions.Size" type="System.Drawing.Size, System.Drawing">
+		<value>960, 28</value>
+	</data>
+	<data name="panelActions.TabIndex" type="System.Int32, mscorlib">
+		<value>6</value>
+	</data>
+	<data name="&gt;&gt;panelActions.Name" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+	<data name="&gt;&gt;panelActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelActions.Parent" xml:space="preserve">
+    <value>panelControls</value>
+  </data>
+	<data name="&gt;&gt;panelActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="panelControls.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Bottom</value>
+	</data>
+	<data name="panelControls.Location" type="System.Drawing.Point, System.Drawing">
+		<value>4, 495</value>
+	</data>
+	<data name="panelControls.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>8, 0, 8, 4</value>
+	</data>
+	<data name="panelControls.Size" type="System.Drawing.Size, System.Drawing">
+		<value>976, 62</value>
+	</data>
+	<data name="panelControls.TabIndex" type="System.Int32, mscorlib">
+		<value>3</value>
+	</data>
+	<data name="&gt;&gt;panelControls.Name" xml:space="preserve">
+    <value>panelControls</value>
+  </data>
+	<data name="&gt;&gt;panelControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelControls.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+	<data name="&gt;&gt;panelControls.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+	<data name="labelHeading.AutoSize" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="labelHeading.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Top</value>
+	</data>
+	<data name="labelHeading.Font" type="System.Drawing.Font, System.Drawing">
+		<value>Segoe UI, 14.25pt, style=Bold</value>
+	</data>
+	<data name="labelHeading.Location" type="System.Drawing.Point, System.Drawing">
+		<value>4, 4</value>
+	</data>
+	<data name="labelHeading.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>3, 3, 3, 3</value>
+	</data>
+	<data name="labelHeading.Size" type="System.Drawing.Size, System.Drawing">
+		<value>171, 31</value>
+	</data>
+	<data name="labelHeading.TabIndex" type="System.Int32, mscorlib">
+		<value>4</value>
+	</data>
+	<data name="labelHeading.Text" xml:space="preserve">
+    <value>批量合并作业</value>
+  </data>
+	<data name="&gt;&gt;labelHeading.Name" xml:space="preserve">
+    <value>labelHeading</value>
+  </data>
+	<data name="&gt;&gt;labelHeading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;labelHeading.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+	<data name="&gt;&gt;labelHeading.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+	<data name="listBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<data name="listBox.ItemHeight" type="System.Int32, mscorlib">
+		<value>24</value>
+	</data>
+	<data name="listBox.Location" type="System.Drawing.Point, System.Drawing">
+		<value>8, 8</value>
+	</data>
+	<data name="listBox.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="listBox.Size" type="System.Drawing.Size, System.Drawing">
+		<value>960, 448</value>
+	</data>
+	<data name="listBox.TabIndex" type="System.Int32, mscorlib">
+		<value>0</value>
+	</data>
+	<data name="&gt;&gt;listBox.Name" xml:space="preserve">
+    <value>listBox</value>
+  </data>
+	<data name="&gt;&gt;listBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;listBox.Parent" xml:space="preserve">
+    <value>panelList</value>
+  </data>
+	<data name="&gt;&gt;listBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<data name="panelList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<data name="panelList.Location" type="System.Drawing.Point, System.Drawing">
+		<value>4, 35</value>
+	</data>
+	<data name="panelList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>8, 8, 8, 4</value>
+	</data>
+	<data name="panelList.Size" type="System.Drawing.Size, System.Drawing">
+		<value>976, 460</value>
+	</data>
+	<data name="panelList.TabIndex" type="System.Int32, mscorlib">
+		<value>5</value>
+	</data>
+	<data name="&gt;&gt;panelList.Name" xml:space="preserve">
+    <value>panelList</value>
+  </data>
+	<data name="&gt;&gt;panelList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;panelList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+	<data name="&gt;&gt;panelList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>True</value>
+	</metadata>
+	<data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+		<value>6, 13</value>
+	</data>
+	<data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+		<value>984, 561</value>
+	</data>
+	<data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+		<value>Segoe UI, 8.25pt</value>
+	</data>
+	<data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
         AAABAAkAEBAAAAEAIABoBAAAlgAAABgYAAABACAAiAkAAP4EAAAgIAAAAQAgAKgQAACGDgAAMDAAAAEA
         IACoJQAALh8AAEBAAAABACAAKEIAANZEAABISAAAAQAgAIhUAAD+hgAAYGAAAAEAIAColAAAhtsAAAAA
         AAABACAAFQYBAC5wAQAAAAAAAQAgAMBsAwBDdgIAKAAAABAAAAAgAAAAAQAgAAAAAAAAAAAAAAAAAAAA
@@ -6551,5 +7006,23 @@
         nyRfS1zrcSlhNB9wY7jPUt5IybxK6+LjLrlhIUZqrpTnWixabeLkazZxOiw+onBL4y3romGyjFsFc3xM
         i11OjuZ3DquVqzhc0nHOTkofh1uK4S4yLbgt8ij7pDX7/wFDWDwzcYwV7wAAAABJRU5ErkJggg==
 </value>
+	</data>
+	<data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+		<value>1000, 600</value>
+	</data>
+	<data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+		<value>4, 4, 4, 4</value>
+	</data>
+	<data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+		<value>CenterParent</value>
+	</data>
+	<data name="$this.Text" xml:space="preserve">
+    <value>批量合并插件</value>
+  </data>
+	<data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PluginForm</value>
+  </data>
+	<data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

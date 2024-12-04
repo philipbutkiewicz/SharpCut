@@ -169,8 +169,8 @@ namespace BatchMerge.plugin
             progressBar.Hide();
 
             MessageBox.Show(
-                "All merge jobs have been completed.",
-                "Jobs completed",
+                Resources.JobQueueCompleted,
+                Resources.JobQueueCompletedTitle,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
@@ -180,7 +180,7 @@ namespace BatchMerge.plugin
         {
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                saveFileDialog.Filter = "Text files (*.txt)|*.txt";
+                saveFileDialog.Filter = Resources.DeleteListFilter;
                 saveFileDialog.DefaultExt = ".txt";
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)

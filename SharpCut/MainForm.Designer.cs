@@ -84,18 +84,18 @@ namespace SharpCut
             this.videoView = new LibVLCSharp.WinForms.VideoView();
             this.timerPause = new System.Windows.Forms.Timer(this.components);
             this.panelTimeline = new System.Windows.Forms.Panel();
+            this.timeline = new SharpCut.Controls.Timeline();
             this.panelTools = new System.Windows.Forms.Panel();
+            this.framePreview = new SharpCut.Controls.FramePreview();
             this.panelTimeControls = new System.Windows.Forms.Panel();
-            this.updateTimer = new System.Windows.Forms.Timer(this.components);
-            this.timerCourtesyUpdate = new System.Windows.Forms.Timer(this.components);
             this.buttonCaptureFrame = new System.Windows.Forms.Button();
             this.buttonExport = new System.Windows.Forms.Button();
             this.buttonSetCutEndTime = new System.Windows.Forms.Button();
             this.buttonSetCutStartTime = new System.Windows.Forms.Button();
             this.buttonRemoveCut = new System.Windows.Forms.Button();
             this.buttonInsertCut = new System.Windows.Forms.Button();
-            this.framePreview = new SharpCut.Controls.FramePreview();
-            this.timeline = new SharpCut.Controls.Timeline();
+            this.updateTimer = new System.Windows.Forms.Timer(this.components);
+            this.timerCourtesyUpdate = new System.Windows.Forms.Timer(this.components);
             this.menuStrip.SuspendLayout();
             this.panelViewport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.videoView)).BeginInit();
@@ -460,6 +460,27 @@ namespace SharpCut
             this.panelTimeline.Controls.Add(this.timeline);
             this.panelTimeline.Name = "panelTimeline";
             // 
+            // timeline
+            // 
+            resources.ApplyResources(this.timeline, "timeline");
+            this.timeline.BackColor = System.Drawing.Color.Gray;
+            this.timeline.Duration = 0D;
+            this.timeline.Name = "timeline";
+            this.timeline.PreviewGeneratingNewFrames = false;
+            this.timeline.PreviewLoaded = false;
+            this.timeline.PreviewProgress = 0F;
+            this.timeline.ScrollSpeed = 1F;
+            this.timeline.SelectedSection = null;
+            this.timeline.SelectionLabel = "";
+            this.timeline.Time = 0D;
+            this.timeline.TimeChanged += new System.EventHandler<SharpCut.Controls.Timeline.TimeChangedEventArgs>(this.timeline_TimeChanged);
+            this.timeline.SeekStart += new System.EventHandler(this.timeline_SeekStart);
+            this.timeline.SeekEnd += new System.EventHandler(this.timeline_SeekEnd);
+            this.timeline.SectionRenamed += new System.EventHandler(this.timeline_SectionRenamed);
+            this.timeline.ForceClosePreviewFrame += new System.EventHandler(this.timeline_ForceClosePreviewFrame);
+            this.timeline.SelectionChanged += new System.EventHandler(this.timeline_SelectionChanged);
+            this.timeline.KeyUp += new System.Windows.Forms.KeyEventHandler(this.timeline_KeyUp);
+            // 
             // panelTools
             // 
             resources.ApplyResources(this.panelTools, "panelTools");
@@ -474,21 +495,17 @@ namespace SharpCut
             this.panelTools.Controls.Add(this.buttonInsertCut);
             this.panelTools.Name = "panelTools";
             // 
+            // framePreview
+            // 
+            resources.ApplyResources(this.framePreview, "framePreview");
+            this.framePreview.FrameHeight = 90;
+            this.framePreview.Name = "framePreview";
+            this.framePreview.VideoFrame = null;
+            // 
             // panelTimeControls
             // 
             resources.ApplyResources(this.panelTimeControls, "panelTimeControls");
             this.panelTimeControls.Name = "panelTimeControls";
-            // 
-            // updateTimer
-            // 
-            this.updateTimer.Interval = 5000;
-            this.updateTimer.Tick += new System.EventHandler(this.updateTimer_Tick);
-            // 
-            // timerCourtesyUpdate
-            // 
-            this.timerCourtesyUpdate.Enabled = true;
-            this.timerCourtesyUpdate.Interval = 10000;
-            this.timerCourtesyUpdate.Tick += new System.EventHandler(this.timerCourtesyUpdate_Tick);
             // 
             // buttonCaptureFrame
             // 
@@ -532,33 +549,16 @@ namespace SharpCut
             this.buttonInsertCut.UseVisualStyleBackColor = true;
             this.buttonInsertCut.Click += new System.EventHandler(this.insertCutToolStripMenuItem_Click);
             // 
-            // framePreview
+            // updateTimer
             // 
-            resources.ApplyResources(this.framePreview, "framePreview");
-            this.framePreview.FrameHeight = 90;
-            this.framePreview.Name = "framePreview";
-            this.framePreview.VideoFrame = null;
+            this.updateTimer.Interval = 5000;
+            this.updateTimer.Tick += new System.EventHandler(this.updateTimer_Tick);
             // 
-            // timeline
+            // timerCourtesyUpdate
             // 
-            resources.ApplyResources(this.timeline, "timeline");
-            this.timeline.BackColor = System.Drawing.Color.Gray;
-            this.timeline.Duration = 0D;
-            this.timeline.Name = "timeline";
-            this.timeline.PreviewGeneratingNewFrames = false;
-            this.timeline.PreviewLoaded = false;
-            this.timeline.PreviewProgress = 0F;
-            this.timeline.ScrollSpeed = 1F;
-            this.timeline.SelectedSection = null;
-            this.timeline.SelectionLabel = "";
-            this.timeline.Time = 0D;
-            this.timeline.TimeChanged += new System.EventHandler<SharpCut.Controls.Timeline.TimeChangedEventArgs>(this.timeline_TimeChanged);
-            this.timeline.SeekStart += new System.EventHandler(this.timeline_SeekStart);
-            this.timeline.SeekEnd += new System.EventHandler(this.timeline_SeekEnd);
-            this.timeline.SectionRenamed += new System.EventHandler(this.timeline_SectionRenamed);
-            this.timeline.ForceClosePreviewFrame += new System.EventHandler(this.timeline_ForceClosePreviewFrame);
-            this.timeline.SelectionChanged += new System.EventHandler(this.timeline_SelectionChanged);
-            this.timeline.KeyUp += new System.Windows.Forms.KeyEventHandler(this.timeline_KeyUp);
+            this.timerCourtesyUpdate.Enabled = true;
+            this.timerCourtesyUpdate.Interval = 10000;
+            this.timerCourtesyUpdate.Tick += new System.EventHandler(this.timerCourtesyUpdate_Tick);
             // 
             // MainForm
             // 

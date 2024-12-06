@@ -25,10 +25,6 @@ namespace BatchMerge.plugin
 
         private Font defaultFont = new Font("Segoe UI", 9.5f);
 
-        private Brush progressBrush = new SolidBrush(Color.FromArgb(6, 176, 37));
-
-        private float slideOffset = 0;
-
         private bool busy = false;
 
         #endregion

@@ -140,6 +140,6 @@
     <value>所有合并作业已完成。</value>
   </data>
   <data name="JobQueueCompletedTitle" xml:space="preserve">
-    <value>Jobs completed</value>
+    <value>作业已完成</value>
   </data>
 </root>

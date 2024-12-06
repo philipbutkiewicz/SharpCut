@@ -6,6 +6,9 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 using static SharpCutCommon.Video.FFMPEG;
 
@@ -13,11 +16,22 @@ namespace BatchMerge.plugin
 {
     public partial class PluginForm : Form
     {
+
+        #region Fields
+
         private FFMPEG fFMPEG = new FFMPEG();
 
         private string deleteListPath = null;
 
         private Font defaultFont = new Font("Segoe UI", 9.5f);
+
+        private Brush progressBrush = new SolidBrush(Color.FromArgb(6, 176, 37));
+
+        private float slideOffset = 0;
+
+        private bool busy = false;
+
+        #endregion
 
         public PluginForm()
         {
@@ -25,11 +39,6 @@ namespace BatchMerge.plugin
         }
 
         #region Private methods
-
-        private void UpdateList()
-        {
-            listBox.Invalidate();
-        }
 
         private void AddSource(List<string> fileNames)
         {
@@ -91,89 +100,117 @@ namespace BatchMerge.plugin
                     batchMergeJobItem.OutputName = batchMergeItemForm.OutputName;
                     batchMergeJobItem.Items.Clear();
                     batchMergeJobItem.Items.AddRange(batchMergeItemForm.Files.Items.Cast<BatchMergeFileItem>().ToArray());
-                    UpdateList();
+                    listBox.Invalidate();
                 }
             }
         }
 
         private void MergeItem(BatchMergeJobItem batchMergeJobItem)
         {
-            using (ProgressDialog progressDialog = new ProgressDialog())
+            busy = true;
+
+            Invoke(new Action(() =>
             {
-                progressDialog.ProgressTitle = SharpCutCommon.Properties.Resources.MergingFiles;
-                fFMPEG.Progress += (object _sender, ProgressEventArgs _e) =>
-                {
-                    try
-                    {
-                        progressDialog?.SetProgress(_e.ProgressPercentage, _e.CurrentTime, _e.TotalTime);
-                    }
-                    catch
-                    {
-                        // Progress dialog may be disposed before we make a call here. Completed event might come earlier than the progress event. Lol fml.
-                    }
-                };
+                ToggleButtons(false);
+                listBox.TopIndex = listBox.Items.Count - 1;
+            }));
 
-                fFMPEG.Completed += (object __sender, CompletedEventArgs __e) =>
+            fFMPEG.Progress += (object _sender, ProgressEventArgs _e) =>
+            {
+                Invoke(new Action(() =>
                 {
-                    if (!__e.Success)
-                    {
-                        progressDialog?.Abort();
+                    batchMergeJobItem.Progress = _e.ProgressPercentage > 0 ? _e.ProgressPercentage / 100f : 0f;
+                }));
+            };
 
+            fFMPEG.Completed += (object __sender, CompletedEventArgs __e) =>
+            {
+                busy = false;
+                
+                Invoke(new Action(() =>
+                {
+                    ToggleButtons(true);
+                }));
+
+                if (!__e.Success)
+                {
+                    Invoke(new Action(() =>
+                    {
                         batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Error;
-                        UpdateList();
+                        listBox.Invalidate();
+                    }));
 
-                        return;
-                    }
+                    return;
+                }
 
-                    progressDialog?.Close();
-
+                Invoke(new Action(() =>
+                {
                     batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Success;
-                    UpdateList();
-                };
+                    batchMergeJobItem.Progress = 1f;
+                    listBox.Invalidate();
+                }));
+            };
 
-                batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Started;
-                UpdateList();
+            batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Started;
+            listBox.Invalidate();
 
-                fFMPEG.Merge(batchMergeJobItem.Items.Select(item => item.FileName).ToList(), batchMergeJobItem.OutputName);
-                progressDialog.ShowDialog();
-            }
+            fFMPEG.Merge(batchMergeJobItem.Items.Select(item => item.FileName).ToList(), batchMergeJobItem.OutputName);
         }
 
         private void MergeAll()
         {
-            progressBar.Value = 0;
-            progressBar.Maximum = listBox.Items.Count;
-            progressBar.Show();
-
+            List<BatchMergeJobItem> jobs = listBox.Items.Cast<BatchMergeJobItem>().ToList();
             StreamWriter streamWriter = !string.IsNullOrEmpty(deleteListPath) && checkBoxSaveDeleteList.Checked ? new StreamWriter(deleteListPath, true, System.Text.Encoding.UTF8) : null;
 
-            List<BatchMergeJobItem> jobs = listBox.Items.Cast<BatchMergeJobItem>().ToList();
-            foreach (BatchMergeJobItem batchMergeJobItem in jobs)
+            Task.Run(() =>
             {
-                MergeItem(batchMergeJobItem);
-
-                if (streamWriter != null)
+                foreach (BatchMergeJobItem batchMergeJobItem in jobs)
                 {
-                    foreach (BatchMergeFileItem batchMergeFileItem in batchMergeJobItem.Items)
+                    MergeItem(batchMergeJobItem);
+                    while (busy)
                     {
-                        streamWriter.WriteLine(Path.GetFileName(batchMergeFileItem.FileName));
+                        Thread.Sleep(100);
                     }
+
+                    if (streamWriter != null)
+                    {
+                        foreach (BatchMergeFileItem batchMergeFileItem in batchMergeJobItem.Items)
+                        {
+                            streamWriter.WriteLine(Path.GetFileName(batchMergeFileItem.FileName));
+                        }
+                    }
+
+                    Invoke(new Action(() =>
+                    {
+                        progressBar.Value++;
+                        Invalidate();
+                    }));
                 }
 
-                progressBar.Value++;
-                Invalidate();
-            }
+                Invoke(new Action(() =>
+                {
+                    progressBar.Hide();
 
-            streamWriter?.Dispose();
+                    MessageBox.Show(
+                        Resources.JobQueueCompleted,
+                        Resources.JobQueueCompletedTitle,
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
 
-            progressBar.Hide();
+                    streamWriter?.Dispose();
+                }));
+            });
+        }
 
-            MessageBox.Show(
-                Resources.JobQueueCompleted,
-                Resources.JobQueueCompletedTitle,
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
+        private void ToggleButtons(bool state)
+        {
+            buttonAddJob.Enabled = state;
+            buttonRemoveJob.Enabled = state;
+            buttonMergeAll.Enabled = state;
+            buttonMergeSelected.Enabled = state;
+            buttonSetDeleteList.Enabled = state;
+            checkBoxSaveDeleteList.Enabled = state;
         }
 
         private void SetDeleteListPath()
@@ -221,26 +258,42 @@ namespace BatchMerge.plugin
         {
             buttonMergeSelected.Enabled = listBox.SelectedIndex > -1;
             buttonRemoveJob.Enabled = listBox.SelectedIndex > -1;
-            UpdateList();
+            listBox.Invalidate();
         }
 
         private void listBox_DoubleClick(object sender, EventArgs e)
         {
+            if (busy) return;
+
             EditJob(listBox.SelectedIndex);
         }
 
         private void buttonMergeSelected_Click(object sender, EventArgs e)
         {
+            progressBar.Value = 0;
+            progressBar.Style = ProgressBarStyle.Marquee;
+            progressBar.Maximum = listBox.Items.Count;
+            progressBar.Show();
+
+            ToggleButtons(false);
             MergeItem(listBox.SelectedItem as BatchMergeJobItem);
         }
 
         private void buttonMergeAll_Click(object sender, EventArgs e)
         {
+            progressBar.Value = 0;
+            progressBar.Style = ProgressBarStyle.Continuous;
+            progressBar.Maximum = listBox.Items.Count;
+            progressBar.Show();
+
+            ToggleButtons(false);
             MergeAll();
         }
 
         private void listBox_DragEnter(object sender, DragEventArgs e)
         {
+            if (busy) return;
+
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 e.Effect = DragDropEffects.Copy;
@@ -249,6 +302,8 @@ namespace BatchMerge.plugin
 
         private void listBox_DragDrop(object sender, DragEventArgs e)
         {
+            if (busy) return;
+
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
             if (files.Length > 1)
@@ -271,16 +326,14 @@ namespace BatchMerge.plugin
             SetDeleteListPath();
         }
 
-        #endregion
-
         private void listBox_DrawItem(object sender, DrawItemEventArgs e)
         {
             if (e.Index == -1) return;
 
             Graphics g = e.Graphics;
-            g.FillRectangle(e.Index == listBox.SelectedIndex ? SystemBrushes.Highlight : Brushes.White, e.Bounds);
 
             BatchMergeJobItem batchMergeJobItem = listBox.Items[e.Index] as BatchMergeJobItem;
+            g.FillRectangle(e.Index == listBox.SelectedIndex ? SystemBrushes.Highlight : Brushes.White, e.Bounds);
 
             Image statusImage = Resources.ImageQueued;
             switch (batchMergeJobItem.Status)
@@ -303,5 +356,8 @@ namespace BatchMerge.plugin
                 new Point(e.Bounds.Left + 24, e.Bounds.Top + 2)
             );
         }
+
+        #endregion
+
     }
 }

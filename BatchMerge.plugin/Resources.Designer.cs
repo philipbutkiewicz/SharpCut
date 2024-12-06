@@ -61,7 +61,7 @@ namespace BatchMerge.plugin {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Merge %s items: .
+        ///   Looks up a localized string similar to Merge {0} items: .
         /// </summary>
         internal static string BatchMergeJobItemDisplayName {
             get {

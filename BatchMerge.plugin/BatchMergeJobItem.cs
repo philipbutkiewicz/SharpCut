@@ -4,16 +4,24 @@ namespace BatchMerge.plugin
 {
     public class BatchMergeJobItem
     {
+        #region Enums
+
         public enum JobStatus
         {
             Success, Error, Queued, Started
         }
+
+        #endregion
+
+        #region Properties
 
         public string OutputName { get; set; }
 
         public List<BatchMergeFileItem> Items { get; set; } = new List<BatchMergeFileItem>();
 
         public JobStatus Status { get; set; } = JobStatus.Queued;
+
+        public float Progress = 0f;
 
         public string DisplayName
         {
@@ -28,5 +36,7 @@ namespace BatchMerge.plugin
                 return displayName.TrimEnd(new char[] { ',', ' '});
             }
         }
+
+        #endregion
     }
 }

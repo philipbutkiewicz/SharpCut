@@ -117,44 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ListEmpty" xml:space="preserve">
+    <value>Lista jest pusta lub nie istnieje.</value>
+  </data>
   <data name="DontMarkForDeletion" xml:space="preserve">
     <value>Nie kasuj pliku</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="go-previous1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-previous2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-previous11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go-next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go-next1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoFilesFound" xml:space="preserve">
+    <value>Nie znaleziono plików. Zamykanie...</value>
+  </data>
+  <data name="FilterTextFiles" xml:space="preserve">
+    <value>Pliki tekstowe (*.txt)|*.txt</value>
+  </data>
+  <data name="MarkForDeletion" xml:space="preserve">
+    <value>Skasuj plik</value>
+  </data>
   <data name="edit-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit-delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ErrorSelectPath" xml:space="preserve">
     <value>Folder nie wybrany. Zamykanie...</value>
   </data>
-  <data name="FilterTextFiles" xml:space="preserve">
-    <value>Pliki tekstowe (*.txt)|*.txt</value>
-  </data>
-  <data name="go-next" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go-next1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go-previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go-previous11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="go-previous1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go-previous2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ListEmpty" xml:space="preserve">
-    <value>Lista jest pusta lub nie istnieje.</value>
-  </data>
-  <data name="MarkForDeletion" xml:space="preserve">
-    <value>Skasuj plik</value>
-  </data>
-  <data name="NoFilesFound" xml:space="preserve">
-    <value>Nie znaleziono plików. Zamykanie...</value>
+  <data name="SDLInitFailed" xml:space="preserve">
+    <value>Inicjalizacja SDL nie powiodła się.</value>
   </data>
   <data name="PreviewWindowTitle" xml:space="preserve">
     <value>Media Helper - Podgląd</value>
   </data>
-  <data name="SDLInitFailed" xml:space="preserve">
-    <value>Inicjalizacja SDL nie powiodła się.</value>
-  </data>
   <data name="StatusBarInfoLabel" xml:space="preserve">
     <value>Zaznaczono {0} z {1} plików ({2}%)</value>
+  </data>
+  <data name="BrowsePreviewsFromList" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

@@ -219,13 +219,59 @@ namespace SharpCut
 
             foreach (ISharpCutPlugin plugin in PluginManager.Plugins)
             {
-                ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem(plugin.GetPluginInfo().Name);
-                toolStripMenuItem.Click += delegate
-                {
-                    plugin.ShowPluginConfiguration();
-                };
+                SharpCutPluginInfo pluginInfo = plugin.GetPluginInfo();
 
-                pluginsToolStripMenuItem.DropDownItems.Add(toolStripMenuItem);
+                ToolStripMenuItem pluginToolStripMenuItem = new ToolStripMenuItem(pluginInfo.Name);
+
+                ToolStripItemCollection collection = pluginsGeneralToolStripMenuItem.DropDownItems;
+                switch (pluginInfo.Category)
+                {
+                    case SharpCutPluginInfo.PluginCategory.MediaUtility:
+                        collection = pluginsMediaUtilitiesToolStripMenuItem.DropDownItems;
+                        break;
+                    case SharpCutPluginInfo.PluginCategory.Analysis:
+                        collection = pluginsAnalysisToolStripMenuItem.DropDownItems;
+                        break;
+                    case SharpCutPluginInfo.PluginCategory.Cutting:
+                        collection = pluginsCuttingToolStripMenuItem.DropDownItems;
+                        break;
+                }
+
+                collection.Add(pluginToolStripMenuItem);
+
+                Dictionary<string, Action> actions = plugin.GetPluginActions();
+                if (actions != null)
+                {
+                    foreach (KeyValuePair<string, Action> action in actions)
+                    {
+                        ToolStripMenuItem pluginActionToolStripMenuItem = new ToolStripMenuItem(action.Key);
+                        pluginActionToolStripMenuItem.Click += delegate
+                        {
+                            action.Value();
+                        };
+
+                        pluginToolStripMenuItem.DropDownItems.Add(pluginActionToolStripMenuItem);
+                    }
+
+                    if (pluginInfo.CanExecute)
+                    {
+                        ToolStripMenuItem pluginExecuteToolStripMenuItem = new ToolStripMenuItem(Resources.ExecutePlugin);
+                        pluginExecuteToolStripMenuItem.Click += delegate
+                        {
+                            plugin.Execute();
+                        };
+
+                        pluginToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
+                        pluginToolStripMenuItem.DropDownItems.Add(pluginExecuteToolStripMenuItem);
+                    }
+                }
+                else
+                {
+                    pluginToolStripMenuItem.Click += delegate
+                    {
+                        plugin.Execute();
+                    };
+                }
             }
 
             pluginsToolStripMenuItem.Enabled = true;
@@ -1309,6 +1355,19 @@ namespace SharpCut
         private void captureFrameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CaptureFrame();
+        }
+
+        /// <summary>
+        /// Open the plugin manager.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pluginManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (PluginManagerForm pluginManagerForm = new PluginManagerForm())
+            {
+                pluginManagerForm.ShowDialog();
+            }
         }
 
         /// <summary>

@@ -160,4 +160,7 @@
   <data name="StatusBarInfoLabel" xml:space="preserve">
     <value>已标记 {0} 个项目（共 {1} 个）（{2}%）</value>
   </data>
+  <data name="BrowsePreviewsFromList" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
 </root>

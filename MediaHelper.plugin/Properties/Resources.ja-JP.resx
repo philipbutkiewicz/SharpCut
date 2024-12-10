@@ -160,4 +160,7 @@
   <data name="StatusBarInfoLabel" xml:space="preserve">
     <value>{1} のうち {0} アイテムがマークされました ({2}%)</value>
   </data>
+  <data name="BrowsePreviewsFromList" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
 </root>

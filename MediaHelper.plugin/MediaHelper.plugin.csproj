@@ -52,12 +52,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PluginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PluginForm.Designer.cs">
-      <DependentUpon>PluginForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="PreviewBrowserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,18 +106,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PluginForm.zh-Hans.resx">
-      <DependentUpon>PluginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PluginForm.it-IT.resx">
-      <DependentUpon>PluginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PluginForm.pl-PL.resx">
-      <DependentUpon>PluginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PluginForm.resx">
-      <DependentUpon>PluginForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PreviewBrowserForm.ja-JP.resx">
       <DependentUpon>PreviewBrowserForm.cs</DependentUpon>
     </EmbeddedResource>

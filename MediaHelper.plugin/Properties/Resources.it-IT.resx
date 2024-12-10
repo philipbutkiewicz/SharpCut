@@ -160,4 +160,7 @@
   <data name="StatusBarInfoLabel" xml:space="preserve">
     <value>Contrassegnato {0} elementi su {1} ({2}%)</value>
   </data>
+  <data name="BrowsePreviewsFromList" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
 </root>

@@ -160,4 +160,10 @@
   <data name="StatusBarInfoLabel" xml:space="preserve">
     <value>Marked {0} items out of {1} ({2}%)</value>
   </data>
+  <data name="BrowsePreviewsFromList" xml:space="preserve">
+    <value>Browse previews from list...</value>
+  </data>
+  <data name="BrowsePreviewsFromDirectory" xml:space="preserve">
+    <value>Browse previews from directory...</value>
+  </data>
 </root>

@@ -193,20 +193,23 @@
   <data name="DownloadFileError" xml:space="preserve">
     <value>Coś poszło nie tak podczas pobierania pliku. Sprawdź połączenie z internetem.</value>
   </data>
+  <data name="UpdateManifestURL" xml:space="preserve">
+    <value>https://conflagrate.co/software/sharpcut/manifest.json</value>
+  </data>
   <data name="Downloading" xml:space="preserve">
     <value>Pobieranie</value>
   </data>
   <data name="NewVersionAvailable" xml:space="preserve">
     <value>Dostępna jest nowa wersja programu SharpCut. Zalecamy instalowanie na bieżąco najnowszych wersji, gdyż wnoszą wiele usprawnień i poprawek na znane problemy. Czy chcesz zainstalować aktualizację teraz?</value>
   </data>
+  <data name="NoUpdatesAvailable" xml:space="preserve">
+    <value>Nie ma nowych aktualizacji. Używasz najnowszej wersji.</value>
+  </data>
   <data name="UpdateChangelogURL" xml:space="preserve">
     <value>https://conflagrate.co/software/sharpcut/changelog.pl-PL.json</value>
   </data>
   <data name="UpdateDownloadError" xml:space="preserve">
     <value>Wystąpił błąd podczas pobierania aktualizacji.</value>
-  </data>
-  <data name="UpdateManifestURL" xml:space="preserve">
-    <value>https://conflagrate.co/software/sharpcut/manifest.json</value>
   </data>
   <data name="UpdateTitle" xml:space="preserve">
     <value>Aktualizacja</value>

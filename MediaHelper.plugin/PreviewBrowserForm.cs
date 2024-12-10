@@ -311,6 +311,10 @@ namespace MediaHelper.plugin
                     {
                         LoadList(openFileDialog.FileName);
                     }
+                    else
+                    {
+                        Close();
+                    }
                 }
             }
             else
@@ -323,7 +327,6 @@ namespace MediaHelper.plugin
                     }
                     else
                     {
-                        MessageBox.Show(Properties.Resources.ErrorSelectPath);
                         Close();
                     }
                 }

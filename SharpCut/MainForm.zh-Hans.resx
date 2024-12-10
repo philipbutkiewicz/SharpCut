@@ -238,18 +238,6 @@
   <data name="previousCutStartToolStripMenuItem.Text" xml:space="preserve">
     <value>上一个分割开始/结束</value>
   </data>
-	<data name="toolStripMenuItem11.Size" type="System.Drawing.Size, System.Drawing">
-		<value>321, 6</value>
-	</data>
-	<data name="enterCutStartTimeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-		<value>Alt+S</value>
-	</data>
-	<data name="enterCutStartTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-		<value>324, 22</value>
-	</data>
-	<data name="enterCutStartTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>输入分割开始时间...</value>
-  </data>
   <data name="nextCutStartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 22</value>
   </data>

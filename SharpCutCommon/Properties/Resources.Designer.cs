@@ -242,6 +242,15 @@ namespace SharpCutCommon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Execute plugin....
+        /// </summary>
+        public static string ExecutePlugin {
+            get {
+                return ResourceManager.GetString("ExecutePlugin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exporting cut segments....
         /// </summary>
         public static string ExportingSections {
@@ -420,6 +429,24 @@ namespace SharpCutCommon.Properties {
         public static string NoUpdatesAvailable {
             get {
                 return ResourceManager.GetString("NoUpdatesAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The selected plugin does not have any configuration options..
+        /// </summary>
+        public static string PluginHasNoConfiguration {
+            get {
+                return ResourceManager.GetString("PluginHasNoConfiguration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No configuration available.
+        /// </summary>
+        public static string PluginHasNoConfigurationTitle {
+            get {
+                return ResourceManager.GetString("PluginHasNoConfigurationTitle", resourceCulture);
             }
         }
         

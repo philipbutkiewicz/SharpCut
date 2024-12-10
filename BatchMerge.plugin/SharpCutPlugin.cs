@@ -1,6 +1,7 @@
 ﻿using SharpCutCommon.Plugins;
 using SharpCutCommon.Video;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
@@ -23,27 +24,38 @@ namespace BatchMerge.plugin
         {
             return new SharpCutPluginInfo()
             {
-                Name = "Batch Merge",
+                Name = "Batch merge",
                 Author = "Conflagrate",
-                Version = "1.4.10.0"
+                Version = "1.4.12.0",
+                Category = SharpCutPluginInfo.PluginCategory.MediaUtility
             };
         }
 
-        public void InitPlugin(Project project)
+        public Dictionary<string, Action> GetPluginActions()
+        {
+            return null;
+        }
+
+        public void Initialize(Project project)
         {
 
         }
 
-        public void DisposePlugin()
+        public void Uninitialize()
         {
         }
 
-        public void ShowPluginConfiguration()
+        public void Execute()
         {
             using (PluginForm pluginForm = new PluginForm())
             {
                 pluginForm.ShowDialog();
             }
+        }
+
+        public bool Configure()
+        {
+            return false;
         }
     }
 }

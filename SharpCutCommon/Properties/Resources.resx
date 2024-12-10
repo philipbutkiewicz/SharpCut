@@ -361,4 +361,13 @@ All rights reserved.
 
 Thank you for continuing to use SharpCut.</value>
   </data>
+  <data name="PluginHasNoConfigurationTitle" xml:space="preserve">
+    <value>No configuration available</value>
+  </data>
+  <data name="PluginHasNoConfiguration" xml:space="preserve">
+    <value>The selected plugin does not have any configuration options.</value>
+  </data>
+  <data name="ExecutePlugin" xml:space="preserve">
+    <value>Execute plugin...</value>
+  </data>
 </root>

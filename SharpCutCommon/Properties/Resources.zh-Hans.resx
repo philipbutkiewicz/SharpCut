@@ -321,6 +321,9 @@
   <data name="SetTimelineTimeInput" xml:space="preserve">
     <value>导航到 (HH:mm:ss:fff)</value>
   </data>
+  <data name="WebsiteURL" xml:space="preserve">
+    <value>https://conflagrate.co/sharpcut.html</value>
+  </data>
   <data name="Credits" xml:space="preserve">
     <value>**SharpCut**
 A simple video cutting utility

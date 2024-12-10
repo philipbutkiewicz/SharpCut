@@ -61,6 +61,24 @@ namespace MediaHelper.plugin.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Browse previews from directory....
+        /// </summary>
+        internal static string BrowsePreviewsFromDirectory {
+            get {
+                return ResourceManager.GetString("BrowsePreviewsFromDirectory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse previews from list....
+        /// </summary>
+        internal static string BrowsePreviewsFromList {
+            get {
+                return ResourceManager.GetString("BrowsePreviewsFromList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Don&apos;t mark for deletion.
         /// </summary>
         internal static string DontMarkForDeletion {

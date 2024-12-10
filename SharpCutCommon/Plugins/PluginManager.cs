@@ -20,7 +20,7 @@ namespace SharpCutCommon.Plugins
                 Type sharpCutPluginType = assembly.GetType($"{Path.GetFileName(pluginFile).Replace(".dll", "")}.SharpCutPlugin");
                 ISharpCutPlugin sharpCutPlugin = Activator.CreateInstance(sharpCutPluginType) as ISharpCutPlugin;
     
-                sharpCutPlugin.InitPlugin(project);
+                sharpCutPlugin.Initialize(project);
 
                 Plugins.Add(sharpCutPlugin);
             }
@@ -30,7 +30,7 @@ namespace SharpCutCommon.Plugins
         {
             foreach (ISharpCutPlugin sharpCutPlugin in Plugins)
             {
-                sharpCutPlugin.DisposePlugin();
+                sharpCutPlugin.Uninitialize();
             }
 
             Plugins.Clear();

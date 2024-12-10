@@ -70,6 +70,15 @@ namespace BatchMerge.plugin {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (default).
+        /// </summary>
+        internal static string DefaultOutputDir {
+            get {
+                return ResourceManager.GetString("DefaultOutputDir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Text files (*.txt)|*.txt.
         /// </summary>
         internal static string DeleteListFilter {

@@ -120,6 +120,9 @@
   <data name="BatchMergeJobItemDisplayName" xml:space="preserve">
     <value>Merge {0} items: </value>
   </data>
+  <data name="DefaultOutputDir" xml:space="preserve">
+    <value>(default)</value>
+  </data>
   <data name="DeleteListFilter" xml:space="preserve">
     <value>Text files (*.txt)|*.txt</value>
   </data>

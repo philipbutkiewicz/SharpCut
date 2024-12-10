@@ -120,6 +120,9 @@
   <data name="BatchMergeJobItemDisplayName" xml:space="preserve">
     <value>合并 {0} 个项目：</value>
   </data>
+  <data name="DefaultOutputDir" xml:space="preserve">
+    <value>(default)</value>
+  </data>
   <data name="DeleteListFilter" xml:space="preserve">
     <value>文本文件 (*.txt)|*.txt</value>
   </data>

@@ -23,6 +23,8 @@ namespace BatchMerge.plugin
 
         private string deleteListPath = null;
 
+        private string defaultOutputDir = null;
+
         private bool isBusy = false;
 
         #endregion
@@ -139,7 +141,10 @@ namespace BatchMerge.plugin
             batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Started;
             listBox.Invalidate();
 
-            fFMPEG.Merge(batchMergeJobItem.Items.Select(item => item.FileName).ToList(), batchMergeJobItem.OutputName);
+            fFMPEG.Merge(
+                batchMergeJobItem.Items.Select(item => item.FileName).ToList(),
+                !string.IsNullOrEmpty(defaultOutputDir) ? Path.Combine(defaultOutputDir, Path.GetFileName(batchMergeJobItem.OutputName)) : batchMergeJobItem.OutputName
+            );
         }
 
         private void MergeAll()
@@ -311,6 +316,27 @@ namespace BatchMerge.plugin
             SetDeleteListPath();
         }
 
+        private void linkLabelOutputDir_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                defaultOutputDir = null;
+                linkLabelOutputDir.Text = Resources.DefaultOutputDir;
+                return;
+            }
+
+            if (e.Button != MouseButtons.Left) return;
+
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                {
+                    defaultOutputDir = folderBrowserDialog.SelectedPath;
+                    linkLabelOutputDir.Text = defaultOutputDir;
+                }
+            }
+        }
+
         private void listBox_DrawItem(object sender, DrawItemEventArgs e)
         {
             if (e.Index == -1) return;
@@ -343,6 +369,5 @@ namespace BatchMerge.plugin
         }
 
         #endregion
-
     }
 }

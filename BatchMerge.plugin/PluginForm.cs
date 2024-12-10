@@ -1,5 +1,4 @@
-﻿using SharpCutCommon;
-using SharpCutCommon.Video;
+﻿using SharpCutCommon.Video;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +7,6 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Timers;
 using System.Windows.Forms;
 using static SharpCutCommon.Video.FFMPEG;
 
@@ -21,11 +19,11 @@ namespace BatchMerge.plugin
 
         private FFMPEG fFMPEG = new FFMPEG();
 
+        private Font listBoxItemFont = new Font("Segoe UI", 9.5f);
+
         private string deleteListPath = null;
 
-        private Font defaultFont = new Font("Segoe UI", 9.5f);
-
-        private bool busy = false;
+        private bool isBusy = false;
 
         #endregion
 
@@ -103,7 +101,7 @@ namespace BatchMerge.plugin
 
         private void MergeItem(BatchMergeJobItem batchMergeJobItem)
         {
-            busy = true;
+            isBusy = true;
 
             Invoke(new Action(() =>
             {
@@ -111,17 +109,9 @@ namespace BatchMerge.plugin
                 listBox.TopIndex = listBox.Items.Count - 1;
             }));
 
-            fFMPEG.Progress += (object _sender, ProgressEventArgs _e) =>
-            {
-                Invoke(new Action(() =>
-                {
-                    batchMergeJobItem.Progress = _e.ProgressPercentage > 0 ? _e.ProgressPercentage / 100f : 0f;
-                }));
-            };
-
             fFMPEG.Completed += (object __sender, CompletedEventArgs __e) =>
             {
-                busy = false;
+                isBusy = false;
                 
                 Invoke(new Action(() =>
                 {
@@ -142,7 +132,6 @@ namespace BatchMerge.plugin
                 Invoke(new Action(() =>
                 {
                     batchMergeJobItem.Status = BatchMergeJobItem.JobStatus.Success;
-                    batchMergeJobItem.Progress = 1f;
                     listBox.Invalidate();
                 }));
             };
@@ -163,7 +152,7 @@ namespace BatchMerge.plugin
                 foreach (BatchMergeJobItem batchMergeJobItem in jobs)
                 {
                     MergeItem(batchMergeJobItem);
-                    while (busy)
+                    while (batchMergeJobItem.Status == BatchMergeJobItem.JobStatus.Started)
                     {
                         Thread.Sleep(100);
                     }
@@ -259,7 +248,7 @@ namespace BatchMerge.plugin
 
         private void listBox_DoubleClick(object sender, EventArgs e)
         {
-            if (busy) return;
+            if (isBusy) return;
 
             EditJob(listBox.SelectedIndex);
         }
@@ -288,7 +277,7 @@ namespace BatchMerge.plugin
 
         private void listBox_DragEnter(object sender, DragEventArgs e)
         {
-            if (busy) return;
+            if (isBusy) return;
 
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -298,7 +287,7 @@ namespace BatchMerge.plugin
 
         private void listBox_DragDrop(object sender, DragEventArgs e)
         {
-            if (busy) return;
+            if (isBusy) return;
 
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
@@ -348,7 +337,7 @@ namespace BatchMerge.plugin
             g.DrawImage(statusImage, new Rectangle(e.Bounds.Left + 4, e.Bounds.Top + 4, 16, 16));
             g.DrawString(
                 batchMergeJobItem.DisplayName,
-                defaultFont, e.Index == listBox.SelectedIndex ? Brushes.White : Brushes.Black,
+                listBoxItemFont, e.Index == listBox.SelectedIndex ? Brushes.White : Brushes.Black,
                 new Point(e.Bounds.Left + 24, e.Bounds.Top + 2)
             );
         }

@@ -21,8 +21,6 @@ namespace BatchMerge.plugin
 
         public JobStatus Status { get; set; } = JobStatus.Queued;
 
-        public float Progress = 0f;
-
         public string DisplayName
         {
             get

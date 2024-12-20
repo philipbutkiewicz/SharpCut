@@ -108,7 +108,6 @@ namespace BatchMerge.plugin
             Invoke(new Action(() =>
             {
                 ToggleButtons(false);
-                listBox.TopIndex = listBox.Items.Count - 1;
             }));
 
             fFMPEG.Completed += (object __sender, CompletedEventArgs __e) =>

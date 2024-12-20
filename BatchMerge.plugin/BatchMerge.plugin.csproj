@@ -52,6 +52,7 @@
       <DependentUpon>BatchMergeItemForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BatchMergeJobItem.cs" />
+    <Compile Include="Controls\DoubleBufferedListBox.cs" />
     <Compile Include="PluginForm.cs">
       <SubType>Form</SubType>
     </Compile>

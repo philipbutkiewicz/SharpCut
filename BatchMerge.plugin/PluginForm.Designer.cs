@@ -41,12 +41,12 @@
             this.buttonRemoveJob = new System.Windows.Forms.Button();
             this.buttonAddJob = new System.Windows.Forms.Button();
             this.panelList = new System.Windows.Forms.Panel();
+            this.listBox = new DoubleBufferedListBox();
             this.panelHeading = new System.Windows.Forms.Panel();
             this.panelOutputDir = new System.Windows.Forms.Panel();
             this.labelOutputDir = new System.Windows.Forms.Label();
             this.linkLabelOutputDir = new System.Windows.Forms.LinkLabel();
             this.labelHeading = new System.Windows.Forms.Label();
-            this.listBox = new DoubleBufferedListBox();
             this.panelControls.SuspendLayout();
             this.panelOptions.SuspendLayout();
             this.panelActions.SuspendLayout();
@@ -139,6 +139,17 @@
             resources.ApplyResources(this.panelList, "panelList");
             this.panelList.Name = "panelList";
             // 
+            // listBox
+            // 
+            resources.ApplyResources(this.listBox, "listBox");
+            this.listBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Name = "listBox";
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
+            this.listBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox_DragDrop);
+            this.listBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox_DragEnter);
+            this.listBox.DoubleClick += new System.EventHandler(this.listBox_DoubleClick);
+            // 
             // panelHeading
             // 
             this.panelHeading.Controls.Add(this.panelOutputDir);
@@ -170,15 +181,6 @@
             // 
             resources.ApplyResources(this.labelHeading, "labelHeading");
             this.labelHeading.Name = "labelHeading";
-            // 
-            // listBox
-            // 
-            resources.ApplyResources(this.listBox, "listBox");
-            this.listBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.listBox.FormattingEnabled = true;
-            this.listBox.Name = "listBox";
-            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
-            this.listBox.DoubleClick += new System.EventHandler(this.listBox_DoubleClick);
             // 
             // PluginForm
             // 

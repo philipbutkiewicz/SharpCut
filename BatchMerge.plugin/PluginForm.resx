@@ -460,13 +460,13 @@
     <value>960, 524</value>
   </data>
   <data name="listBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;listBox.Name" xml:space="preserve">
     <value>listBox</value>
   </data>
   <data name="&gt;&gt;listBox.Type" xml:space="preserve">
-    <value>DoubleBufferedListBox, BatchMerge.plugin, Version=1.4.11.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listBox.Parent" xml:space="preserve">
     <value>panelList</value>

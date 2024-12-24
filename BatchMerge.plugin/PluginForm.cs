@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -223,6 +224,7 @@ namespace BatchMerge.plugin
         private void PluginForm_Load(object sender, EventArgs e)
         {
             listBox.DisplayMember = "DisplayName";
+            typeof(ListBox).GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(listBox, true);
         }
 
         private void buttonAddJob_Click(object sender, EventArgs e)

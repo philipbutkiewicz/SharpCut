@@ -117,27 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBoxSaveDeleteList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 3</value>
+  </data>
+  <data name="checkBoxSaveDeleteList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 28</value>
+  </data>
   <data name="checkBoxSaveDeleteList.Text" xml:space="preserve">
     <value>Zapisz listę plików do kasowania (aby manualnie usunąć później)</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 3</value>
-  </data>
   <data name="buttonSetDeleteList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 24</value>
+    <value>214, 28</value>
   </data>
   <data name="buttonSetDeleteList.Text" xml:space="preserve">
     <value>Ustaw plik listy plików do skasowania</value>
-  </data>
-  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>565, 22</value>
   </data>
   <data name="panelProgress.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 0</value>
   </data>
   <data name="panelProgress.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 28</value>
+  </data>
+  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>565, 22</value>
   </data>
   <data name="buttonMergeSelected.Location" type="System.Drawing.Point, System.Drawing">
     <value>752, 0</value>
@@ -166,8 +169,17 @@
   <data name="buttonAddJob.Text" xml:space="preserve">
     <value>Dodaj zadanie</value>
   </data>
+  <data name="labelOutputDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 10</value>
+  </data>
+  <data name="labelOutputDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 13</value>
+  </data>
+  <data name="labelOutputDir.Text" xml:space="preserve">
+    <value>Folder wyjściowy (kliknij prawym przyciskiem myszy aby zresetować)</value>
+  </data>
   <data name="labelHeading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 31</value>
+    <value>205, 34</value>
   </data>
   <data name="labelHeading.Text" xml:space="preserve">
     <value>Zadania batch merge</value>

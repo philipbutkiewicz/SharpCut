@@ -117,7 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="buttonDelete.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="buttonDown.Text" xml:space="preserve">
+    <value>下に移動</value>
+  </data>
+  <data name="buttonUp.Text" xml:space="preserve">
+    <value>上に移動</value>
+  </data>
+  <data name="buttonBrowse.Text" xml:space="preserve">
+    <value>ブラウズ</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelOutputName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="labelOutputName.Text" xml:space="preserve">
+    <value>出力ファイルパス</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAEBAAAAEAIABoBAAAlgAAABgYAAABACAAiAkAAP4EAAAgIAAAAQAgAKgQAACGDgAAMDAAAAEA

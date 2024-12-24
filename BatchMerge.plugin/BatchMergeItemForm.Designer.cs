@@ -55,57 +55,57 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.Files);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.buttonDelete);
             this.panel2.Controls.Add(this.buttonDown);
             this.panel2.Controls.Add(this.buttonUp);
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // buttonDelete
             // 
-            this.buttonDelete.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.buttonDelete, "buttonDelete");
+            this.buttonDelete.BackColor = System.Drawing.Color.White;
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonDown
             // 
-            this.buttonDown.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.buttonDown, "buttonDown");
+            this.buttonDown.BackColor = System.Drawing.Color.White;
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.UseVisualStyleBackColor = false;
             this.buttonDown.Click += new System.EventHandler(this.buttonDown_Click);
             // 
             // buttonUp
             // 
-            this.buttonUp.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.buttonUp, "buttonUp");
+            this.buttonUp.BackColor = System.Drawing.Color.White;
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.UseVisualStyleBackColor = false;
             this.buttonUp.Click += new System.EventHandler(this.buttonUp_Click);
             // 
             // panelOutputSettings
             // 
+            resources.ApplyResources(this.panelOutputSettings, "panelOutputSettings");
             this.panelOutputSettings.BackColor = System.Drawing.Color.White;
             this.panelOutputSettings.Controls.Add(this.panelOutputFileName);
             this.panelOutputSettings.Controls.Add(this.buttonBrowse);
             this.panelOutputSettings.Controls.Add(this.labelOutputName);
-            resources.ApplyResources(this.panelOutputSettings, "panelOutputSettings");
             this.panelOutputSettings.Name = "panelOutputSettings";
             // 
             // panelOutputFileName
             // 
-            this.panelOutputFileName.Controls.Add(this.textBoxOutput);
             resources.ApplyResources(this.panelOutputFileName, "panelOutputFileName");
+            this.panelOutputFileName.Controls.Add(this.textBoxOutput);
             this.panelOutputFileName.Name = "panelOutputFileName";
             // 
             // textBoxOutput
@@ -116,8 +116,8 @@
             // 
             // buttonBrowse
             // 
-            this.buttonBrowse.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.buttonBrowse, "buttonBrowse");
+            this.buttonBrowse.BackColor = System.Drawing.Color.White;
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.UseVisualStyleBackColor = false;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);

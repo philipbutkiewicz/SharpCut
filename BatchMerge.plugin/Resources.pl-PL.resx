@@ -121,7 +121,7 @@
     <value>Połącz {0} pliki/plików: </value>
   </data>
   <data name="DefaultOutputDir" xml:space="preserve">
-    <value>(default)</value>
+    <value>(domyślny)</value>
   </data>
   <data name="DeleteListFilter" xml:space="preserve">
     <value>Pliki tekstowe (*.txt)|*.txt</value>
@@ -141,8 +141,5 @@
   </data>
   <data name="JobQueueCompleted" xml:space="preserve">
     <value>Wszystkie zadania zostały wykonane.</value>
-  </data>
-  <data name="JobQueueCompletedTitle" xml:space="preserve">
-    <value>Zadania wykonane</value>
   </data>
 </root>

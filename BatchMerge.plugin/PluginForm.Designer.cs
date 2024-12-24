@@ -143,6 +143,7 @@
             // 
             this.listBox.AllowDrop = true;
             resources.ApplyResources(this.listBox, "listBox");
+            this.listBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.listBox.FormattingEnabled = true;
             this.listBox.Name = "listBox";
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);

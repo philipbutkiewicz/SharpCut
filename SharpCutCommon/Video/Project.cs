@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using SharpCutCommon.Properties;
 using static SharpCutCommon.Video.FFMPEG;
 using System.Threading.Tasks;
-using System.Security.Cryptography;
 
 namespace SharpCutCommon.Video
 {

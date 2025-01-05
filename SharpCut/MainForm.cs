@@ -1,5 +1,4 @@
 ﻿using LibVLCSharp.Shared;
-using SharpCutCommon;
 using SharpCutCommon.Dialogs;
 using SharpCutCommon.Plugins;
 using SharpCutCommon.Properties;
@@ -7,15 +6,11 @@ using SharpCutCommon.Util;
 using SharpCutCommon.Video;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static SharpCut.Controls.Timeline;
 
@@ -207,6 +202,23 @@ namespace SharpCut
             catch
             {
                 MessageBox.Show(Resources.ErrorLoadingProject, Resources.GenericErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+        }
+
+        /// <summary>
+        /// Install pre-packaged plugins.
+        /// </summary>
+        private void InstallPlugins()
+        {
+            string[] pluginFiles = Directory.GetFiles(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "*.scplugin");
+            foreach (string pluginFile in pluginFiles)
+            {
+                using (PluginPackage pluginPackage = new PluginPackage(pluginFile))
+                {
+                    pluginPackage.Install();
+                }
+
+                File.Delete(pluginFile);
             }
         }
 
@@ -837,6 +849,7 @@ namespace SharpCut
         {
             InitProject();
             InitSplash();
+            InstallPlugins();
             LoadPlugins();
             InitUpdates();
         }

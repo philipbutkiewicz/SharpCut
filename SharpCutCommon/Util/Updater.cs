@@ -1,14 +1,11 @@
 ﻿using Newtonsoft.Json;
-using SharpCutCommon.Dialogs;
 using SharpCutCommon.Properties;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
+using System.IO;
 using System.Net;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SharpCutCommon.Util
@@ -18,21 +15,14 @@ namespace SharpCutCommon.Util
         #region Public methods
 
         /// <summary>
-        /// Downloads the application changelog.
+        /// Returns the application changelog.
         /// </summary>
         /// <returns></returns>
         public static string GetChangelog()
         {
-            try
-            {
-                WebClient webClient = new WebClient();
-                return webClient.DownloadString(Resources.UpdateChangelogURL);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Failed to download changelog: ${ex.Message}");
-                return null;
-            }
+            string changeLogPath = Path.Combine("Resources", "ChangeLog.txt");
+
+            return File.Exists(changeLogPath) ? File.ReadAllText(changeLogPath) : null;
         }
 
         /// <summary>
@@ -90,21 +80,14 @@ namespace SharpCutCommon.Util
         /// </summary>
         private static void StartUpdate(Dictionary<string, string> release)
         {
-            using (UpdateDialog updateDialog = new UpdateDialog(release["file"]))
+            ProcessStartInfo processStartInfo = new ProcessStartInfo()
             {
-                if (updateDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    ProcessStartInfo processStartInfo = new ProcessStartInfo()
-                    {
-                        FileName = updateDialog.FileName,
-                        UseShellExecute = true,
-                        Arguments = release["args"]
-                    };
+                FileName = "SharpCutUpdate.exe",
+                UseShellExecute = true
+            };
 
-                    Process.Start(processStartInfo);
-                    Environment.Exit(0);
-                }
-            }
+            Process.Start(processStartInfo);
+            Environment.Exit(0);
         }
 
         #endregion

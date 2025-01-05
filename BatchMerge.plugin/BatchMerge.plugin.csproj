@@ -143,6 +143,7 @@
     <ProjectReference Include="..\SharpCutCommon\SharpCutCommon.csproj">
       <Project>{3d60c365-8002-4b1d-9256-26ca5a68dfee}</Project>
       <Name>SharpCutCommon</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -150,13 +151,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>echo Copying the BatchMerge plugin...
-copy $(SolutionDir)BatchMerge.plugin\$(OutDir)BatchMerge.plugin.dll $(SolutionDir)SharpCut\$(OutDir)BatchMerge.plugin.dll /Y
-
-echo Copying the BatchMerge plugin translations...
-xcopy $(SolutionDir)BatchMerge.plugin\$(OutDir)pl-PL\* $(SolutionDir)SharpCut\$(OutDir)\pl-PL /Y /I /E
-xcopy $(SolutionDir)BatchMerge.plugin\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E
-xcopy $(SolutionDir)BatchMerge.plugin\$(OutDir)zh-Hans\* $(SolutionDir)SharpCut\$(OutDir)\zh-Hans /Y /I /E
-xcopy $(SolutionDir)BatchMerge.plugin\$(OutDir)ja-JP\* $(SolutionDir)SharpCut\$(OutDir)\ja-JP /Y /I /E</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

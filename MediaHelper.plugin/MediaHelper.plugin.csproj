@@ -103,6 +103,7 @@
     <ProjectReference Include="..\SharpCutCommon\SharpCutCommon.csproj">
       <Project>{3d60c365-8002-4b1d-9256-26ca5a68dfee}</Project>
       <Name>SharpCutCommon</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -189,18 +190,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>echo Copying the MediaHelper plugin...
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)MediaHelper.plugin.dll $(SolutionDir)SharpCut\$(OutDir)MediaHelper.plugin.dll /Y
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2.dll $(SolutionDir)SharpCut\$(OutDir)SDL2.dll /Y
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\SDL2_ttf.dll $(SolutionDir)SharpCut\$(OutDir)SDL2_ttf.dll /Y
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\libfreetype-6.dll $(SolutionDir)SharpCut\$(OutDir)libfreetype-6.dll /Y
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)native\zlib1.dll $(SolutionDir)SharpCut\$(OutDir)zlib1.dll /Y
-copy $(SolutionDir)MediaHelper.plugin\$(OutDir)SDL2-CS.dll $(SolutionDir)SharpCut\$(OutDir)SDL2-CS.dll /Y
-
-echo Copying the MediaHelper plugin translations...
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)pl-PL\* $(SolutionDir)SharpCut\$(OutDir)\pl-PL /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)it-IT\* $(SolutionDir)SharpCut\$(OutDir)\it-IT /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)zh-Hans\* $(SolutionDir)SharpCut\$(OutDir)\zh-Hans /Y /I /E
-xcopy $(SolutionDir)MediaHelper.plugin\$(OutDir)ja-JP\* $(SolutionDir)SharpCut\$(OutDir)\ja-JP /Y /I /E</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

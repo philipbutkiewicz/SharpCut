@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaHelper.plugin", "Media
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchMerge.plugin", "BatchMerge.plugin\BatchMerge.plugin.csproj", "{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCutUpdate", "SharpCutUpdate\SharpCutUpdate.csproj", "{632B5A92-F11C-47A5-B14B-74D2A693F358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +35,9 @@ Global
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Debug|x64.Build.0 = Debug|x64
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Release|x64.ActiveCfg = Release|x64
 		{FAF3538D-9196-4355-8BE2-4DB3E5CA82D8}.Release|x64.Build.0 = Release|x64
+		{632B5A92-F11C-47A5-B14B-74D2A693F358}.Debug|x64.ActiveCfg = Debug|x64
+		{632B5A92-F11C-47A5-B14B-74D2A693F358}.Debug|x64.Build.0 = Debug|x64
+		{632B5A92-F11C-47A5-B14B-74D2A693F358}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
